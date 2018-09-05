@@ -56,7 +56,7 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
 
 ### MacOS X
-#### Opção 1 - Linha de comandos
+#### Opção 1 - Linha de comandos [solução avançado]
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
 	* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/mac-diskutil.png)
@@ -70,23 +70,43 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
-#### Opção 2 - Etcher
+#### Opção 2 - Etcher [solução muito fácil]
+A forma mais facil de se clonar a imagem para um cartão de memória num MacBook é atravez do [Etcher](https://etcher.io/ "Visit Etcher website"). Não é preciso descomprimir o `zip`, nem é preciso desmontar o cartão de memória previamente.
+
 ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
 
 ## Preparar raspberry para ser acedido e configurado por outro computador
+Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
+Como não é o caso, vamos agora preparar o sistema operativo para que permita ligações externas e para que se ligue ao WiFi
 
 ### Ligar SSH
-Dentro da partição `/boot`, cria um ficheiro chamado `ssh`, este ficheiro pode estar vazio.
+Para acederes por SSH ao raspberry, basta que no cartão, dentro da partição chamada `boot`, cries um ficheiro chamado `ssh`, este ficheiro pode estar vazio.
+
+Para criar o ficheiro podes usar o comando `touch ssh`, caso o queiras fazer pela linha de comandos em linux ou MacOS X
 
 ### Ligar VNC
 
 ### Ligar WiFi
 
+`vim wpa_supplicant.conf`
 
-Não esquecer:
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="NOME DA REDE"
+    psk="PASSWORD DA REDE"
+    key_mgmt=WPA-PSK
+}
+```
+
+
+# Não esquecer de adicionar ao guião:
 SSH -X
+
 PIL
+
 OpenCV
+
 PWM
 
 
