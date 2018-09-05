@@ -1,9 +1,11 @@
-Rui Martins
-rui@martins.pt
+    Rui Martins, rui@martins.pt [Setembro de 2018]
 
 # Configurar Raspberry PI com WiFi, sem usar monitor e teclado.
 
 ## Introdução
+
+![Raspberry PI 3 B+](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/RPi3-B-Plus-intro.jpg)
+https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
 
 Um raspberry pi é um computador, na sua board tem um processor, RAM, interfaces USB, interface HDMI, (...) mas que usa um cartão de memória (ou PEN USB) como memória secundária, em vez dos discos rigidos que normalmente são usados nos computadores tradicionais.
 
@@ -27,17 +29,14 @@ No entanto o Raspbian é dos mais utilizados e documentados, com suporte oficial
 
 Para descarregar a imagem do Raspbian vai à seguinte ligação: [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/ "Download Raspbian") , e descarrega a versão com linha de comandos e ambiente gráfico, ou a versão minimalista, só com linha de comandos e sem abiente gráfico.
 
-No nosso caso, vamos optar pela versão com ambiente gráfico, pois iremos utilizar mais à frente.
-
 ![Download Raspbian](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/download-raspbian.png)
 
+No nosso caso, vamos optar pela versão com ambiente gráfico, pois iremos utilizar mais à frente.
 
 ## Copiar a imagem para o cartão
 Após se ter feito download da imagem do sistema operativo, este tem que ser escrito num cartão de memóra.
 
-Vou aqui apresentar várias alternativas para resolver este passo, algumas delas obrigam a primeiro descomprimir o ficheiro com a imagem (Ex: `2018-06-27-raspbian-stretch.zip`), outras não tem essa necessidade.
-
-Outra questão importante é que algumas das alternativas obrigam a que o cartão de memória tenha sido desmontado do sistema operativo, antes de ser escrito.
+Vou aqui apresentar várias alternativas para resolver este passo, algumas delas obrigam a primeiro descomprimir o ficheiro com a imagem (ex: `2018-06-27-raspbian-stretch.zip`), outras obrigam a que o cartão de memória seja desmontado do sistema operativo, antes de ser escrito.
 
 ### Windows
 
