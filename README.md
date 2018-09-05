@@ -15,7 +15,7 @@ A diferença é que nos computadores tradicionais, usas um DVD ou uma PEN para i
 
 O sistema operativo que vamos usar no raspberry pi é o Raspbian.
 
-No entanto, por questões de segurança, por omissão, quando um raspberry arranca o Raspbian, não permite ligações externas, ou seja, não consegues usar ou configurar o raspberry sem lhe ligar um monitor e um teclado.
+No entanto, por questões de segurança, por omissão, quando um raspberry arranca o Raspbian, este não permite ligações SSH nem VNC externas, ou seja, não consegues usar ou configurar o raspberry sem lhe ligar um monitor e um teclado.
 
 A solução para este problema está descrita nos proximos passos.
 
@@ -75,20 +75,34 @@ A forma mais facil de se clonar a imagem para um cartão de memória num MacBook
 
 ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
 
+Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
+
 ## Preparar raspberry para ser acedido e configurado por outro computador
 Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
 Como não é o caso, vamos agora preparar o sistema operativo para que permita ligações externas e para que se ligue ao WiFi
 
 ### Ligar SSH
-Para acederes por SSH ao raspberry, basta que no cartão, dentro da partição chamada `boot`, cries um ficheiro chamado `ssh`, este ficheiro pode estar vazio.
+Para acederes por SSH ao raspberry, basta que no cartão, dentro da partição chamada `boot`, cries um ficheiro chamado `ssh`, este ficheiro pode estar vazio. O Raspbian ao arrancar, irá detectar a presença desse ficheiro como sendo um pedido para ligar o protocolo de SSH.
 
-Para criar o ficheiro podes usar o comando `touch ssh`, caso o queiras fazer pela linha de comandos em linux ou MacOS X
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/slash_boot.png)
 
-### Ligar VNC
+Caso prefiras criar o ficheiro pela linha de comandos em linux ou mac, podes usar o comando `touch ssh`.
 
-### Ligar WiFi
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/touch_ssh.png)
 
-`vim wpa_supplicant.conf`
+A partir deste momento, já podes aceder ao teu raspberry a partir de outro computador na mesma rede, mas ainda estás limitado, só funcionará se tiveres o raspberry ligado por cabo de rede.
+
+Caso pretendas aceder ao raspberry a partir da rede wifi, tens que configurar o passo [**Ligar WiFi** ](#ligar-wifi)
+
+Nota: Se pretenderes executar aplicações com ambiente gráfico por SSH, deves executar o comando `ssh` com o parametro `-X`. Iremos demonstrar mais à frente.
+
+### <a name="ligar-wifi"></a>Ligar WiFi
+
+Para que o teu raspberry se ligue automáticamente à rede wifi, é preciso também configurar na partição `/boot` do cartão um ficheiro com o nome `wpa_supplicant.conf`
+
+(Se preferires criar o ficheiro pela linha de comandos do linux ou mac, podes usar o seguinte comando: `nano wpa_supplicant.conf`)
+
+Dentro do ficheiro, deves colocar o seguinte conteúdo:
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -98,6 +112,12 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
+
+Agora sim, se ejectares o cartão e o colocares no raspberry, este irá ligar-se automáticamente à rede WiFi.
+
+### Ligar VNC
+
+
 
 
 # Não esquecer de adicionar ao guião:
