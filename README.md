@@ -18,8 +18,19 @@ A solução para este problema está descrita nos proximos passos.
 
 ## Descarregar a imagem do sistema operativo.
 
-Descarregar a imagem do Raspbian (sistema operativo)
-https://www.raspberrypi.org/downloads/raspbian/
+Existem vários sistemas operativos já pré configurados para serem executados no raspberry, na página oficial podemos encontrar várias alternativas:
+
+![Raspberry PI Operative Systems](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/OS-RPi.png)
+
+No entanto o Raspbian é dos mais utilizados e documentados, com suporte oficial. É um sistema operativo baseado em [Debian](https://www.debian.org/ "Visit Debian website") (Muito semelhante a [Ubuntu](https://www.ubuntu.com/ "Visit Ubuntu website"), [Kali linux](https://www.kali.org/ "Visit Kali linux website"), ...)
+
+Para descarregar a imagem do Raspbian vai à seguinte ligação: [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/ "Download Raspbian") , e descarrega a versão com linha de comandos e ambiente gráfico, ou a versão minimalista, só com linha de comandos e sem abiente gráfico.
+
+No nosso caso, vamos optar pela versão com ambiente gráfico, pois iremos utilizar mais à frente.
+
+
+![Download Raspbian](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/download-raspbian.png)
+
 
 ## Copiar a imagem para o cartão
 
@@ -31,6 +42,12 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 ### Ligar WiFi
 
+
+Não esquecer:
+SSH -X
+PIL
+OpenCV
+PWM
 
 
 
