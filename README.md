@@ -69,6 +69,9 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
+#### Opção 2
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
+
 ## Preparar raspberry para ser acedido e configurado por outro computador
 
 ### Ligar SSH
