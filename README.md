@@ -44,9 +44,10 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 ### Linux
 
 
-#### Opção 1
+#### Opção 1 - Linha de comandos
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `lsblk`, verifica que discos `/dev/sdX` existem, insere o cartão de memória e volta a executar `lsblk`, agora vê qual é o novo disco que aparece na lista dos `/dev/sdX`.
+* Desmonta todas as partições desse disco.
 * `sudo dd bs=4M if=~/Downloads/2018-06-27-raspbian-stretch.img of=/dev/sdX conv=fsync`
 	* `~/Downloads/2018-06-27-raspbian-stretch.img` é o caminho completo da imagem que descomprimiste, o `if` significa `input file`;
 	* `/dev/sdX` é o caminho para o cartão de memória, deves substituir o `X` pelo numero correspondente. `of` significa `output file`;
@@ -55,7 +56,7 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
 
 ### MacOS X
-#### Opção 1
+#### Opção 1 - Linha de comandos
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
 	* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/mac-diskutil.png)
@@ -69,7 +70,7 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
-#### Opção 2
+#### Opção 2 - Etcher
 ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
 
 ## Preparar raspberry para ser acedido e configurado por outro computador
