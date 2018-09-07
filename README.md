@@ -47,9 +47,10 @@ Hardware:
 Software:
 
 * Windows:
+	* Etcher (Opcional)
 	* Putty ou software semelhante
 * Linux:
-	* 
+	* Etcher (Opcional)
 * MacOS X:
 	* Etcher (Opcional)
 	* Lan Scan ou software semelhante (Opcional)
@@ -207,6 +208,10 @@ sudo ldconfig
 
 ![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
 
+## Expand File Sistem
+
+## Boot Options
+
 # shared library file
 
 
@@ -218,6 +223,9 @@ sudo apt-get install -y eog
 
 `sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy`
 
+## O que é uma imagem
+
+
 
 # Não esquecer de adicionar ao guião:
 SSH -X
@@ -225,6 +233,8 @@ SSH -X
 SSH com Chave Publica
 
 SSH Greating
+
+SCP
 
 PIL
 
