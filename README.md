@@ -2,7 +2,22 @@
 
 # Configurar Raspberry PI com WiFi, sem usar monitor e teclado.
 
-## Introdução
+## <a name="indice"></a>Indice
+* [Introdução](#introducao)
+* [Pré-Requisitos](#prerequisitos)
+* [Descarregar a imagem do sistema operativo](#download_image)
+* [Copiar a imagem para o cartão](#clone_image_to_card)
+	* [Windows](#clone_image_to_card-windows)
+	* [Linux](#clone_image_to_card-linux)
+	* [MacOS X](#clone_image_to_card-mac)
+* [Preparar raspberry para ser acedido e configurado por outro computador](#prepare_remote)
+	* [SSH](#ssh)
+	* [Configurar WiFi](#ligar-wifi)
+	* [VNC](#vnc)
+
+[Voltar ao indice](#indice)
+
+## <a name="introducao"></a>Introdução
 
 ![Raspberry PI 3 B+](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/RPi3-B-Plus-intro.jpg)
 https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
@@ -19,7 +34,34 @@ No entanto, por questões de segurança, por omissão, quando um raspberry arran
 
 A solução para este problema está descrita nos proximos passos.
 
-## Descarregar a imagem do sistema operativo.
+[Voltar ao indice](#indice)
+
+## <a name="prerequisitos"></a>Pré-Requisitos
+Hardware:
+
+* Raspberry Pi (1, 2, ou 3)
+* PSU (Alimentador electrico de preferencia com 2A, podem usar a do telemovel)
+* Cartão de memória SD ou micro SD (com 8Gb ou mais)
+* Pen Wifi (caso o Raspberry Pi não tenha wifi integrado)
+
+Software:
+
+* Windows:
+	* Putty ou software semelhante
+* Linux:
+	* 
+* MacOS X:
+	* Etcher (Opcional)
+	* Lan Scan ou software semelhante (Opcional)
+
+Outros:
+
+* Bash (Não obrigatório)
+* Python 3 (Não obrigatório)
+
+[Voltar ao indice](#indice)
+
+## <a name="download_image"></a> Descarregar a imagem do sistema operativo.
 
 Existem vários sistemas operativos já pré configurados para serem executados no raspberry, na página oficial podemos encontrar várias alternativas:
 
@@ -33,15 +75,18 @@ Para descarregar a imagem do Raspbian vai à seguinte ligação: [https://www.ra
 
 No nosso caso, vamos optar pela versão com ambiente gráfico, pois iremos utilizar mais à frente.
 
-## Copiar a imagem para o cartão
+[Voltar ao indice](#indice)
+
+## <a name="clone_image_to_card"></a>Copiar a imagem para o cartão
 Após se ter feito download da imagem do sistema operativo, este tem que ser escrito num cartão de memóra.
 
 Vou aqui apresentar várias alternativas para resolver este passo, algumas delas obrigam a primeiro descomprimir o ficheiro com a imagem (ex: `2018-06-27-raspbian-stretch.zip`), outras obrigam a que o cartão de memória seja desmontado do sistema operativo, antes de ser escrito.
 
-### Windows
+### <a name="clone_image_to_card-windows"></a>Windows
 
+[Voltar ao indice](#indice)
 
-### Linux
+### <a name="clone_image_to_card-linux"></a>Linux
 
 
 #### Opção 1 - Linha de comandos
@@ -55,8 +100,12 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que possas ter instalado no PC
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
 
-### MacOS X
+[Voltar ao indice](#indice)
+
+### <a name="clone_image_to_card-mac"></a>MacOS X
+
 #### Opção 1 - Linha de comandos [solução avançado]
+
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
 	* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/mac-diskutil.png)
@@ -70,6 +119,8 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
+[Voltar ao indice](#indice)
+
 #### Opção 2 - Etcher [solução muito fácil]
 A forma mais facil de se clonar a imagem para um cartão de memória num MacBook é atravez do [Etcher](https://etcher.io/ "Visit Etcher website"). Não é preciso descomprimir o `zip`, nem é preciso desmontar o cartão de memória previamente.
 
@@ -77,11 +128,14 @@ A forma mais facil de se clonar a imagem para um cartão de memória num MacBook
 
 Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
 
-## Preparar raspberry para ser acedido e configurado por outro computador
+[Voltar ao indice](#indice)
+
+## <a name="prepare_remote"></a>Preparar raspberry para ser acedido e configurado por outro computador
 Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
 Como não é o caso, vamos agora preparar o sistema operativo para que permita ligações externas e para que se ligue ao WiFi
 
-### Ligar SSH
+### Preparar raspberry para servir SSH
+
 Para acederes por SSH ao raspberry, basta que no cartão, dentro da partição chamada `boot`, cries um ficheiro chamado `ssh`, este ficheiro pode estar vazio. O Raspbian ao arrancar, irá detectar a presença desse ficheiro como sendo um pedido para ligar o protocolo de SSH.
 
 ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/slash_boot.png)
@@ -96,6 +150,8 @@ Caso pretendas aceder ao raspberry a partir da rede wifi, tens que configurar o 
 
 Nota: Se pretenderes executar aplicações com ambiente gráfico por SSH, deves executar o comando `ssh` com o parametro `-X`. Iremos demonstrar mais à frente.
 
+[Voltar ao indice](#indice)
+
 ### <a name="ligar-wifi"></a>Ligar WiFi
 
 Para que o teu raspberry se ligue automáticamente à rede wifi, é preciso também configurar na partição `/boot` do cartão um ficheiro com o nome `wpa_supplicant.conf`
@@ -107,17 +163,52 @@ Dentro do ficheiro, deves colocar o seguinte conteúdo:
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
-    ssid="NOME DA REDE"
-    psk="PASSWORD DA REDE"
+    ssid="workshop8"
+    psk="password"
     key_mgmt=WPA-PSK
 }
 ```
 
 Agora sim, se ejectares o cartão e o colocares no raspberry, este irá ligar-se automáticamente à rede WiFi.
 
+[Voltar ao indice](#indice)
+
+### Descobrir IP do raspberry
+TODO: Inserir imagens LanScan Pro
+
+[Voltar ao indice](#indice)
+
+### Ligar por SSH
+
+`ssh pi@10.79.72.107`
+
+[Voltar ao indice](#indice)
+
 ### Ligar VNC
 
+[Voltar ao indice](#indice)
 
+# O que executar na primeira utilização do raspberry
+`sudo rpi-update # Updating firmware [Opcional]`
+
+`sudo reboot # (Se tiver sido executado o rpi-update)`
+
+```
+# ldconfig is a program that is used to maintain the shared library cache.
+# This cache is typically stored in the file /etc/ld.so.cache and is used by
+# the system to map a shared library name to the location of the corresponding
+sudo ldconfig
+```
+
+`sudo raspi-config`
+
+![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
+
+# shared library file
+
+
+sudo apt-get install -y vim
+sudo apt-get install -y eog
 
 
 # Não esquecer de adicionar ao guião:
