@@ -104,7 +104,18 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 ### <a name="clone_image_to_card-mac"></a>MacOS X
 
-#### Opção 1 - Linha de comandos [solução avançado]
+
+
+#### Opção 1 - Etcher [solução muito fácil]
+A forma mais facil de se clonar a imagem para um cartão de memória num MacBook é atravez do [Etcher](https://etcher.io/ "Visit Etcher website"). Não é preciso descomprimir o `zip`, nem é preciso desmontar o cartão de memória previamente.
+
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
+
+Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
+
+[Voltar ao indice](#indice)
+
+#### Opção 2 - Linha de comandos [solução avançado]
 
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
@@ -118,15 +129,6 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `sudo sh -c '(pv -n ~/Downloads/RaspberryPI-Images/2018-06-27-raspbian-stretch.img | dd of=/dev/disk2 bs=1m) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0'`
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
-
-[Voltar ao indice](#indice)
-
-#### Opção 2 - Etcher [solução muito fácil]
-A forma mais facil de se clonar a imagem para um cartão de memória num MacBook é atravez do [Etcher](https://etcher.io/ "Visit Etcher website"). Não é preciso descomprimir o `zip`, nem é preciso desmontar o cartão de memória previamente.
-
-![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
-
-Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
 
 [Voltar ao indice](#indice)
 
@@ -161,6 +163,7 @@ Para que o teu raspberry se ligue automáticamente à rede wifi, é preciso tamb
 Dentro do ficheiro, deves colocar o seguinte conteúdo:
 
 ```
+country=PT
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
     ssid="workshop8"
@@ -211,8 +214,17 @@ sudo apt-get install -y vim
 sudo apt-get install -y eog
 
 
+# Instalar OpenCV
+
+`sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy`
+
+
 # Não esquecer de adicionar ao guião:
 SSH -X
+
+SSH com Chave Publica
+
+SSH Greating
 
 PIL
 
