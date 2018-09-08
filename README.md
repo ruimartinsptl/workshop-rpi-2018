@@ -229,6 +229,8 @@ No teu computador deves instalar o UltraVNC Client a partir deste link: [https:/
 
 ![Chromium a correr no Raspberry](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/UltraVNC-2.png)
 
+No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferramenta de partilhad e ecrã que acompanha o sistema operativo. (TODO: Completar)
+
 [Voltar ao indice](#indice)
 
 # O que executar na primeira utilização do raspberry
