@@ -11,8 +11,8 @@ print "height: %d pixels" % (image.shape[0])
 print "channels: %d" % (image.shape[2])
 
 # show the image and wait for a keypress
-# cv2.imshow("Image", image)
-# cv2.waitKey(0)
+# cv2.imshow("Image", image)  # DESCOMENTAR QUEM TIVER ACESSO SSH -X
+# cv2.waitKey(0)  # DESCOMENTAR QUEM TIVER ACESSO SSH -X
 
 # save the image -- OpenCV handles converting filetypes
 # automatically
