@@ -1,6 +1,7 @@
 # import the necessary packages
 import numpy as np
 import cv2
+import os
 
 # initialize our canvas as a 300x300 with 3 channels, Red, Green,
 # and Blue, with a black background
