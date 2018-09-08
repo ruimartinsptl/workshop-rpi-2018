@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dab221a-e32f-4297-941d-b1d6cad0ad45" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceGPIO/detectFace.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceGPIO/haarcascade_frontalface_default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceGPIO/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,30 +24,6 @@
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="e#32#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20-ImageShape.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/20-ImageShape.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <marker date="1536414540641" expanded="true" signature="77:87" ph="import ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <folding>
-                <element signature="e#32#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,15 +79,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="285">
+              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="24" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1536416042195" expanded="true" signature="592:650" ph="..." />
+                <marker date="1536416088041" expanded="true" signature="594:647" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceGPIO/detectFace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="haarcascade_frontalface_default.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/haarcascade_frontalface_default.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,6 +156,7 @@
         <option value="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
         <option value="$PROJECT_DIR$/Vision/40-drawing.py" />
         <option value="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" />
+        <option value="$PROJECT_DIR$/Vision/70-detectFaceGPIO/detectFace.py" />
       </list>
     </option>
   </component>
@@ -214,6 +217,12 @@
               <item name="workshop-rpi-2018" type="462c0819:PsiDirectoryNode" />
               <item name="Vision" type="462c0819:PsiDirectoryNode" />
               <item name="60-detectFaceHaarCascade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-rpi-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-rpi-2018" type="462c0819:PsiDirectoryNode" />
+              <item name="Vision" type="462c0819:PsiDirectoryNode" />
+              <item name="70-detectFaceGPIO" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -624,13 +633,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceGPIO/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="285">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1536416042195" expanded="true" signature="592:650" ph="..." />
+            <marker date="1536416088041" expanded="true" signature="594:647" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceGPIO/detectFace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
