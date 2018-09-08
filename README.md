@@ -200,6 +200,7 @@ Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e n�
 
 #### Windows
 No windows podes usar o [Putty](https://www.putty.org/)
+**TODO: Colocar imagem**
 
 **Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, no entanto precisamos de instalar um XServer, e activar a opção de `X11 forewarding` no putty:
 
@@ -221,6 +222,10 @@ Ex: `ssh pi@10.79.72.107`
 
 [Voltar ao indice](#indice)
 
+### Transferir ficheiros por SCP
+`scp <user>@<ip>:<path> <path>`
+
+`scp <path> <user>@<ip>:<path>`
 
 ### Transferir ficheiros por SFTP
 Instalar o [Filezilla](https://filezilla-project.org), e criar uma nova ligação SFTP.
@@ -232,7 +237,7 @@ Instalar o [Filezilla](https://filezilla-project.org), e criar uma nova ligaçã
 ### Ligar VNC
 Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que primeiro activar o protocolo de VNC.
 
-Para activar o protocolo de VNC, vais voltar a executar o `sudo raspi-config` escolher a opção `5 Interfacing Options` e depois `enable` em `P3 VNC`.
+Para activar o protocolo de VNC, vais executar o comando `sudo raspi-config` escolher a opção `5 Interfacing Options` e depois `enable` em `P3 VNC`.
 
 No teu computador deves instalar o UltraVNC Client a partir deste link: [https://www.realvnc.com/en/connect/download/viewer](https://www.realvnc.com/en/connect/download/viewer)
 
@@ -316,13 +321,12 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 
 # Não esquecer de adicionar ao guião:
-SSH -X
 
 SSH com Chave Publica || ssh-copy-id pi@123.213.123.123
 
 SSH Greating
 
-SCP
+
 
 PIL
 
