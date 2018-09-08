@@ -211,8 +211,7 @@ Exemplo de uma aplicação que está instalada no raspberry, mas a janela está 
 Por linha de comandos executa o seguinte comando:
 `ssh <nome de utilizador>@<ip dp raspberry>`
 
-Ex:
-`ssh pi@10.79.72.107`
+Ex: `ssh pi@10.79.72.107`
 
 
 **Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
@@ -220,9 +219,15 @@ Ex:
 [Voltar ao indice](#indice)
 
 ### Ligar VNC
-Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que voltar a executar o `sudo raspi-config` escolher a opção `5 Interfacing Options` e depois `enable` em `P3 VNC`.
+Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que primeiro activar o protocolo de VNC.
 
+Para activar o protocolo de VNC, vais voltar a executar o `sudo raspi-config` escolher a opção `5 Interfacing Options` e depois `enable` em `P3 VNC`.
 
+No teu computador deves instalar o UltraVNC Client a partir deste link: [https://www.realvnc.com/en/connect/download/viewer](https://www.realvnc.com/en/connect/download/viewer)
+
+![Chromium a correr no Raspberry](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/UltraVNC-1.png)
+
+![Chromium a correr no Raspberry](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/UltraVNC-2.png)
 
 [Voltar ao indice](#indice)
 
@@ -241,6 +246,10 @@ sudo ldconfig
 `sudo raspi-config`
 
 ![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
+
+sudo raspi-config nonint do_wifi_country PT
+raspi-config nonint do_hostname rpi-demo
+https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config
 
 ## Expand File Sistem
 
@@ -273,7 +282,7 @@ sudo apt-get install -y eog
 # Não esquecer de adicionar ao guião:
 SSH -X
 
-SSH com Chave Publica
+SSH com Chave Publica || ssh-copy-id pi@123.213.123.123
 
 SSH Greating
 
