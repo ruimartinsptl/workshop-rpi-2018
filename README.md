@@ -221,9 +221,18 @@ sudo apt-get install -y eog
 
 # Instalar OpenCV
 
+## OpenCV 2.x
 `sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy`
 
+## OpenCV 3.x
+`TODO: Documentr aqui`
+
+# Processar imagens
 ## O que é uma imagem
+![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/MatBasicImageForComputer.jpg)
+
+![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/RGB-matrix.png)
+
 
 
 

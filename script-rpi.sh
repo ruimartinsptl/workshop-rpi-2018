@@ -8,7 +8,6 @@ sudo rpi-update
 # the system to map a shared library name to the location of the corresponding 
 # shared library file
 sudo ldconfig
-
 sudo reboot
 
 sudo raspi-config
