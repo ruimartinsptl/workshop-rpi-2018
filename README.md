@@ -7,6 +7,7 @@
 * [Pré-Requisitos](#prerequisitos)
 * [Descarregar a imagem do sistema operativo](#download_image)
 * [Copiar a imagem para o cartão](#clone_image_to_card)
+	* [Windows, Linux ou Mac](#clone_image_to_card-windows-linux-mac)
 	* [Windows](#clone_image_to_card-windows)
 	* [Linux](#clone_image_to_card-linux)
 	* [MacOS X](#clone_image_to_card-mac)
@@ -47,7 +48,7 @@ Hardware:
 Software:
 
 * Windows:
-	* Etcher (Opcional)
+	* Etcher ou Win32DiskImager
 	* Putty ou software semelhante
 	* FileZilla
 * Linux:
@@ -86,14 +87,27 @@ Após se ter feito download da imagem do sistema operativo, este tem que ser esc
 
 Vou aqui apresentar várias alternativas para resolver este passo, algumas delas obrigam a primeiro descomprimir o ficheiro com a imagem (ex: `2018-06-27-raspbian-stretch.zip`), outras obrigam a que o cartão de memória seja desmontado do sistema operativo, antes de ser escrito.
 
+### <a name="clone_image_to_card-windows-linux-mac"></a>Windows, linux, ou mac
+
+#### Etcher [solução muito fácil]
+A forma mais facil de se clonar a imagem para um cartão de memória é atravez do [Etcher](https://etcher.io/ "Visit Etcher website").
+
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
+
+Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
+
+[Voltar ao indice](#indice)
+
+
 ### <a name="clone_image_to_card-windows"></a>Windows
+
+Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"), no entanto, também é muito utilizado o Win32DiskImager, que é semelhante ao [Etcher](https://etcher.io/ "Visit Etcher website")
 
 [Voltar ao indice](#indice)
 
 ### <a name="clone_image_to_card-linux"></a>Linux
 
-
-#### Opção 1 - Linha de comandos
+#### Linha de comandos
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `lsblk`, verifica que discos `/dev/sdX` existem, insere o cartão de memória e volta a executar `lsblk`, agora vê qual é o novo disco que aparece na lista dos `/dev/sdX`.
 * Desmonta todas as partições desse disco.
@@ -108,18 +122,7 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 
 ### <a name="clone_image_to_card-mac"></a>MacOS X
 
-
-
-#### Opção 1 - Etcher [solução muito fácil]
-A forma mais facil de se clonar a imagem para um cartão de memória num MacBook é atravez do [Etcher](https://etcher.io/ "Visit Etcher website"). Não é preciso descomprimir o `zip`, nem é preciso desmontar o cartão de memória previamente.
-
-![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
-
-Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
-
-[Voltar ao indice](#indice)
-
-#### Opção 2 - Linha de comandos [solução avançado]
+#### Linha de comandos
 
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
@@ -181,7 +184,11 @@ Agora sim, se ejectares o cartão e o colocares no raspberry, este irá ligar-se
 [Voltar ao indice](#indice)
 
 ### Descobrir IP do raspberry
-TODO: Inserir imagens LanScan Pro
+Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e não soubermos qual é o IP que lhe vai ser atribuído quando se ligar à rede, podemos usar ferramentas de pesquisa de IPs, como o [AngryIP Scanner](https://angryip.org/download), LanScan Pro, etc...
+
+![Angry-IP-Scanner](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Angry-IP-Scanner.png)
+
+![LanScan Pro](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/LanScanPro.png)
 
 [Voltar ao indice](#indice)
 
