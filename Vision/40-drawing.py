@@ -10,7 +10,7 @@ canvas = np.zeros((300, 300, 3), dtype="uint8")
 # bottom-right
 green = (0, 255, 0)
 cv2.line(canvas, (0, 0), (300, 300), green)
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-line-gree.png"), image)
 # cv2.waitKey(0)
 
@@ -18,26 +18,26 @@ cv2.imwrite(os.path.join("40-line-gree.png"), image)
 # bottom-left
 red = (0, 0, 255)
 cv2.line(canvas, (300, 0), (0, 300), red, 3)
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-line-ref.png"), image)
 # cv2.waitKey(0)
 
 # draw a green 50x50 pixel square, starting at 10x10 and ending at 60x60
 cv2.rectangle(canvas, (10, 10), (60, 60), green)
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-square.png"), image)
 # cv2.waitKey(0)
 
 # draw another rectangle, this time we'll make it red and 5 pixels thick
 cv2.rectangle(canvas, (50, 200), (200, 225), red, 5)
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-square2.png"), image)
 # cv2.waitKey(0)
 
 # let's draw one last rectangle: blue and filled in
 blue = (255, 0, 0)
 cv2.rectangle(canvas, (200, 50), (225, 125), blue, -1)
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-square3.png"), image)
 # cv2.waitKey(0)
 
@@ -51,7 +51,7 @@ for r in xrange(0, 175, 25):
     cv2.circle(canvas, (centerX, centerY), r, white)
 
 # show our work of art
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-circle.png"), image)
 # cv2.waitKey(0)
 
@@ -68,7 +68,7 @@ for i in xrange(0, 25):
     cv2.circle(canvas, tuple(pt), radius, color, -1)
 
 # Show our masterpiece
-cv2.imshow("Canvas", canvas)
+# cv2.imshow("Canvas", canvas)
 cv2.imwrite(os.path.join("40-random-circles.png"), image)
 # cv2.waitKey(0)
 
@@ -83,6 +83,6 @@ cv2.circle(image, (192, 174), 10, (0, 0, 255), -1)
 cv2.rectangle(image, (134, 200), (186, 218), (0, 0, 255), -1)
 
 # show the output image
-cv2.imshow("Output", image)
+# cv2.imshow("Output", image)
 # cv2.waitKey(0)
 cv2.imwrite(os.path.join("40-face-with-circle.png"), image)
