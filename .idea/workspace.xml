@@ -2,75 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dab221a-e32f-4297-941d-b1d6cad0ad45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/37523-0.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/37523-1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/37671.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/37700-1000.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/37700.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/basic_shapes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bricks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/car.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/circles_and_squares.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/clonazepam_1mg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/coins01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/coins02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dog_contour.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/download.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/florida_trip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/florida_trip_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/giraffe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/grand_canyon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/license_plate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/more_shapes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/more_shapes_example.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/opencv_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/receipt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shapes_example.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/teacup.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tetris_blocks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/threshold_example.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tictactoe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/wynn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/20-ImageShape.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/40-drawing.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.1-translation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.2-rotate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.3-resize.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.4-flipping.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.5-crop.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.6-arithmetic.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.7-Bitwise_Operations.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.8-Masking.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.9-Splitting_and_Merging.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/quiz.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/run.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/detectFace.d.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/haarcascade_frontalface_default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/run.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/detectFace.d.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/detectFace.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/haarcascade_frontalface_default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vision/70-detectFaceMotor/run.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/10-Capturar-foto.py" afterPath="$PROJECT_DIR$/Vision/10-Capturar-foto.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script-rpi.sh" afterPath="$PROJECT_DIR$/script-rpi.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" afterPath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +13,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script-rpi.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="10-Capturar-foto.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script-rpi.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script-rpi.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
@@ -91,24 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threshold_example.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/threshold_example.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tictactoe.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/tictactoe.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wynn.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/wynn.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -197,6 +138,7 @@
         <option value="$PROJECT_DIR$/Vision/10-Capturar-foto.py" />
         <option value="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/run.sh" />
         <option value="$PROJECT_DIR$/script-rpi.sh" />
+        <option value="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
       </list>
     </option>
   </component>
@@ -384,16 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#77#86#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vision/20-ImageShape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -401,22 +333,6 @@
           <folding>
             <marker date="1536409789822" expanded="true" signature="77:87" ph="import ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,6 +535,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
