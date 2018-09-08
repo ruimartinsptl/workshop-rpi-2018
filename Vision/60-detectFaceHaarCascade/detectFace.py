@@ -28,7 +28,7 @@ while True:
 
     # Display the resulting frame
     # cv2.imshow('Video', frame)  ##################################### DESCOMENTAR Quando se usa SSH -X
-    cv2.imwrite(os.path.join("60-LastFrame.png"), image)  ############# Comentar quando se usa SSH -X
+    cv2.imwrite(os.path.join("60-LastFrame.png"), frame)  ############# Comentar quando se usa SSH -X
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
