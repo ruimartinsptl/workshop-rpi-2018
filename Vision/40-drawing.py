@@ -12,7 +12,7 @@ canvas = np.zeros((300, 300, 3), dtype="uint8")
 green = (0, 255, 0)
 cv2.line(canvas, (0, 0), (300, 300), green)
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-line-gree.png"), image)
+cv2.imwrite(os.path.join("40-line-gree.png"), canvas)
 # cv2.waitKey(0)
 
 # now, draw a 3 pixel thick red line from the top-right corner to the
@@ -20,26 +20,26 @@ cv2.imwrite(os.path.join("40-line-gree.png"), image)
 red = (0, 0, 255)
 cv2.line(canvas, (300, 0), (0, 300), red, 3)
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-line-ref.png"), image)
+cv2.imwrite(os.path.join("40-line-ref.png"), canvas)
 # cv2.waitKey(0)
 
 # draw a green 50x50 pixel square, starting at 10x10 and ending at 60x60
 cv2.rectangle(canvas, (10, 10), (60, 60), green)
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-square.png"), image)
+cv2.imwrite(os.path.join("40-square.png"), canvas)
 # cv2.waitKey(0)
 
 # draw another rectangle, this time we'll make it red and 5 pixels thick
 cv2.rectangle(canvas, (50, 200), (200, 225), red, 5)
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-square2.png"), image)
+cv2.imwrite(os.path.join("40-square2.png"), canvas)
 # cv2.waitKey(0)
 
 # let's draw one last rectangle: blue and filled in
 blue = (255, 0, 0)
 cv2.rectangle(canvas, (200, 50), (225, 125), blue, -1)
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-square3.png"), image)
+cv2.imwrite(os.path.join("40-square3.png"), canvas)
 # cv2.waitKey(0)
 
 # reset our canvas and draw a white circle at the center of the canvas with
@@ -53,7 +53,7 @@ for r in xrange(0, 175, 25):
 
 # show our work of art
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-circle.png"), image)
+cv2.imwrite(os.path.join("40-circle.png"), canvas)
 # cv2.waitKey(0)
 
 # let's go crazy and draw 25 random circles
@@ -70,7 +70,7 @@ for i in xrange(0, 25):
 
 # Show our masterpiece
 # cv2.imshow("Canvas", canvas)
-cv2.imwrite(os.path.join("40-random-circles.png"), image)
+cv2.imwrite(os.path.join("40-random-circles.png"), canvas)
 # cv2.waitKey(0)
 
 # load the image of Adrian in Florida
