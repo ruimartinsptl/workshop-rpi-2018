@@ -1,4 +1,7 @@
 
+echo 'alias ll="ls -la"' >> .bash_rc
+source .bash_rc
+
 # Updating firmware
 sudo rpi-update
 # sudo reboot

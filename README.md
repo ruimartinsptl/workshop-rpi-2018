@@ -49,11 +49,14 @@ Software:
 * Windows:
 	* Etcher (Opcional)
 	* Putty ou software semelhante
+	* FileZilla
 * Linux:
 	* Etcher (Opcional)
+	* FileZilla
 * MacOS X:
 	* Etcher (Opcional)
 	* Lan Scan ou software semelhante (Opcional)
+	* FileZilla
 
 Outros:
 
