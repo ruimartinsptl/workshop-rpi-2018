@@ -49,7 +49,8 @@ Software:
 
 * Windows:
 	* Etcher ou Win32DiskImager
-	* Putty ou software semelhante
+	* Putty
+	* xming
 	* FileZilla
 * Linux:
 	* Etcher (Opcional)
@@ -194,11 +195,34 @@ Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e n�
 
 ### Ligar por SSH
 
+#### Windows
+No windows podes usar o [Putty](https://www.putty.org/)
+
+**Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, no entanto precisamos de instalar um XServer, e activar a opção de `X11 forewarding` no putty:
+
+https://sourceforge.net/projects/xming/
+
+Exemplo de uma aplicação que está instalada no raspberry, mas a janela está a ser mostrada no windows:
+
+![Chromium a correr no Raspberry](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/chromium-ssh-windows.png)
+
+
+#### Linux e Mac OS
+Por linha de comandos executa o seguinte comando:
+`ssh <nome de utilizador>@<ip dp raspberry>`
+
+Ex:
 `ssh pi@10.79.72.107`
+
+
+**Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
 
 [Voltar ao indice](#indice)
 
 ### Ligar VNC
+Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que voltar a executar o `sudo raspi-config` escolher a opção `5 Interfacing Options` e depois `enable` em `P3 VNC`.
+
+
 
 [Voltar ao indice](#indice)
 
