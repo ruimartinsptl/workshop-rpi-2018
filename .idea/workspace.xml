@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dab221a-e32f-4297-941d-b1d6cad0ad45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/40-drawing.py" afterPath="$PROJECT_DIR$/Vision/40-drawing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" afterPath="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,26 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="10-Capturar-foto.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script-rpi.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script-rpi.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -69,56 +49,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py">
+      <file leaf-file-name="1.4.1-translation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.1-translation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.4.7-Bitwise_Operations.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.7-Bitwise_Operations.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.4.8-Masking.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.8-Masking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-45">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.4.9-Splitting_and_Merging.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.9-Splitting_and_Merging.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quiz.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/quiz.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="99" lean-forward="false" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".name" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceMotor/.idea/.name">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="haarcascade_frontalface_default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceMotor/haarcascade_frontalface_default.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="run.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceMotor/run.sh">
+        <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/run.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detectFace.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/70-detectFaceMotor/detectFace.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,8 +133,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&quot;.&quot;,</find>
-      <find>imshow</find>
       <find>cv2.imshow(</find>
+      <find>imshow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,6 +152,7 @@
         <option value="$PROJECT_DIR$/Vision/20-ImageShape.py" />
         <option value="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
         <option value="$PROJECT_DIR$/Vision/40-drawing.py" />
+        <option value="$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py" />
       </list>
     </option>
   </component>
@@ -207,7 +206,13 @@
               <item name="workshop-rpi-2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="workshop-rpi-2018" type="462c0819:PsiDirectoryNode" />
               <item name="Vision" type="462c0819:PsiDirectoryNode" />
-              <item name="70-detectFaceMotor" type="462c0819:PsiDirectoryNode" />
+              <item name="50_Basic_Image_Processing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-rpi-2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-rpi-2018" type="462c0819:PsiDirectoryNode" />
+              <item name="Vision" type="462c0819:PsiDirectoryNode" />
+              <item name="60-detectFaceHaarCascade" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -552,6 +557,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="e#32#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.1-translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.7-Bitwise_Operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.8-Masking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/1.4.9-Splitting_and_Merging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/50_Basic_Image_Processing/quiz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -564,20 +627,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/detectFace.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="29" column="99" lean-forward="false" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="e#32#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
