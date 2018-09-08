@@ -5,7 +5,7 @@ import os
 import RPi.GPIO as GPIO
 from time import sleep
 
-# Explicar diferença entre GPIO.BOARD e GPIO.BCM
+# Explicar diferenca entre GPIO.BOARD e GPIO.BCM
 # The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagrams below.
 # The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO".
 # Unfortunately the BCM numbers changed between versions of the Pi1 Model B
