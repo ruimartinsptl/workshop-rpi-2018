@@ -52,13 +52,16 @@ Software:
 	* Putty
 	* xming
 	* FileZilla
+	* Ultra VNC
 * Linux:
 	* Etcher (Opcional)
 	* FileZilla
+	* Ultra VNC
 * MacOS X:
 	* Etcher (Opcional)
 	* Lan Scan ou software semelhante (Opcional)
 	* FileZilla
+	* Ultra VNC
 
 Outros:
 
@@ -220,7 +223,11 @@ Ex: `ssh pi@10.79.72.107`
 
 
 ### Transferir ficheiros por SFTP
-Instalar o [Filezilla](https://filezilla-project.org), 
+Instalar o [Filezilla](https://filezilla-project.org), e criar uma nova ligação SFTP.
+
+![](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Filezilla-1.png)
+
+![](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Filezilla-2.png)
 
 ### Ligar VNC
 Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que primeiro activar o protocolo de VNC.
