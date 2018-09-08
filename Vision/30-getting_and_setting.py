@@ -1,6 +1,7 @@
 # import the necessary packages
 import argparse
 import cv2
+import os
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
