@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dab221a-e32f-4297-941d-b1d6cad0ad45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" afterPath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/20-ImageShape.py" afterPath="$PROJECT_DIR$/Vision/20-ImageShape.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="10-Capturar-foto.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="180">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -33,12 +33,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="765">
               <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-              <folding />
+              <folding>
+                <element signature="e#32#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20-ImageShape.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vision/20-ImageShape.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <marker date="1536414462558" expanded="true" signature="77:87" ph="import ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,16 +62,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".name" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vision/60-detectFaceHaarCascade/.idea/.name">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,6 +130,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;.&quot;,</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -139,6 +148,7 @@
         <option value="$PROJECT_DIR$/Vision/50_Basic_Image_Processing/run.sh" />
         <option value="$PROJECT_DIR$/script-rpi.sh" />
         <option value="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
+        <option value="$PROJECT_DIR$/Vision/20-ImageShape.py" />
       </list>
     </option>
   </component>
@@ -323,16 +333,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/20-ImageShape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1536409789822" expanded="true" signature="77:87" ph="import ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,14 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -557,9 +549,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="765">
           <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#32#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/20-ImageShape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <marker date="1536414462558" expanded="true" signature="77:87" ph="import ..." />
+          </folding>
         </state>
       </provider>
     </entry>
