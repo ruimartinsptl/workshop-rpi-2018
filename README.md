@@ -218,6 +218,10 @@ Ex: `ssh pi@10.79.72.107`
 
 [Voltar ao indice](#indice)
 
+
+### Transferir ficheiros por SFTP
+Instalar o [Filezilla](https://filezilla-project.org), 
+
 ### Ligar VNC
 Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que primeiro activar o protocolo de VNC.
 
@@ -233,7 +237,7 @@ No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferrame
 
 [Voltar ao indice](#indice)
 
-# O que executar na primeira utilização do raspberry
+# Algumas configurações iniciais
 `sudo rpi-update # Updating firmware [Opcional]`
 
 `sudo reboot # (Se tiver sido executado o rpi-update)`
@@ -249,19 +253,42 @@ sudo ldconfig
 
 ![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
 
-sudo raspi-config nonint do_wifi_country PT
-raspi-config nonint do_hostname rpi-demo
-https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config
+* Expand File Sistem
+* Update
+* Locale
+* Boot Options -> DESKTOP
+* Video Memory
+* Output Audio
+* ...
 
-## Expand File Sistem
+**NOTA:**
+O raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
 
-## Boot Options
+`sudo raspi-config nonint do_wifi_country PT`
+`sudo raspi-config nonint do_hostname rpi-demo`
 
-# shared library file
+Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
 
 
-sudo apt-get install -y vim
-sudo apt-get install -y eog
+# Outros:
+
+`sudo apt-get install -y vim` # Editor
+
+`sudo apt-get install -y eog` # Visualizar imagens
+
+`sudo apt-get install screen` # Deixar aplicações em execução quando se fecha a ligação SSH
+
+`sudo apt-get install htop` #
+
+# Remover programas que não fazem falta:
+`sudo apt-get purge wolfram-engine`
+
+`sudo apt-get purge libreoffice* `
+
+`sudo apt-get clean`
+
+`sudo apt-get autoremove`
+
 
 
 # Instalar OpenCV
