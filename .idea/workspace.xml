@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dab221a-e32f-4297-941d-b1d6cad0ad45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" afterPath="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vision/40-drawing.py" afterPath="$PROJECT_DIR$/Vision/40-drawing.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="30-getting_and_setting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="e#32#47#0" expanded="true" />
               </folding>
@@ -57,12 +57,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="40-drawing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="417">
+              <caret line="87" column="45" lean-forward="false" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+              <folding>
+                <element signature="e#32#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,6 +152,7 @@
         <option value="$PROJECT_DIR$/script-rpi.sh" />
         <option value="$PROJECT_DIR$/Vision/20-ImageShape.py" />
         <option value="$PROJECT_DIR$/Vision/30-getting_and_setting.py" />
+        <option value="$PROJECT_DIR$/Vision/40-drawing.py" />
       </list>
     </option>
   </component>
@@ -540,14 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vision/10-Capturar-foto.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -568,10 +563,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vision/30-getting_and_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
           <folding>
             <element signature="e#32#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vision/40-drawing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="87" column="45" lean-forward="false" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+          <folding>
+            <element signature="e#32#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
