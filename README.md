@@ -10,7 +10,7 @@
 * [3ª parte: Configuração de GPIOs](#parte3)
 * [Exemplo de Mini-Projecto](#projecto)
 
-[Voltar ao Índice](#indice) | [Passo seguinte - Introdução](#introducao)
+[Voltar ao Índice](#indice)
 
 ## <a name="introducao"></a>Introdução
 
@@ -21,7 +21,7 @@ Na segunda parte do workshop vamos aprender a manipular imagens vindas de uma
 camera com recurso a OpenCV. E por ultimo iremos aprender a ler e escrever para os 
 GPIOs do raspberry.   
 
-[Voltar ao Índice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
+[Voltar ao Índice](#indice)
 
 ## <a name="prerequisitos"></a>Pré-Requisitos para o workshop
 Hardware:
