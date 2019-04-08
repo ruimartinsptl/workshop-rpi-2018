@@ -71,7 +71,7 @@ Após se ter feito download da imagem do sistema operativo, este tem que ser esc
 
 Vou aqui apresentar várias alternativas para resolver este passo, algumas delas obrigam a primeiro descomprimir o ficheiro com a imagem (ex: `2018-06-27-raspbian-stretch.zip`), outras obrigam a que o cartão de memória seja desmontado do sistema operativo, antes de ser escrito.
 
-### <a name="clone_image_to_card-windows-linux-mac"></a>Windows, linux, ou mac
+### <a name="clone_image_to_card-windows-linux-mac"></a>Windows, linux, e mac
 
 #### Etcher [solução muito fácil]
 A forma mais facil de se clonar a imagem para um cartão de memória é atravez do [Etcher](https://etcher.io/ "Visit Etcher website").
@@ -89,7 +89,7 @@ configurações de SSH, wifi, etc...
 
 Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"), no entanto, também é muito utilizado o [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), que é semelhante ao [Etcher](https://etcher.io/ "Visit Etcher website")
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
 ### <a name="clone_image_to_card-linux"></a>Linux
 
@@ -104,7 +104,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que possas ter instalado no PC
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
 ### <a name="clone_image_to_card-mac"></a>MacOS X
 
@@ -123,7 +123,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
 ## <a name="prepare_remote"></a>Preparar raspberry para ser acedido e configurado por outro computador
 Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
