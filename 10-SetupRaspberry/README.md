@@ -37,7 +37,7 @@ No entanto, por questões de segurança, por omissão, quando um raspberry arran
 A solução para este problema está descrita nos proximos passos.
 
 
-[Voltar ao Índice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Descarregar a imagem do sistema operativo](#download_image)
+[Voltar ao Índice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Descarregar imagem](#download_image)
 
 ## <a name="download_image"></a> Descarregar a imagem do sistema operativo.
 
@@ -82,7 +82,7 @@ Após a imagem ter sido copiada para o cartão, o cartão é desmontado automát
 e voltar a colocar no computador, para que seja montada a partição de `/boot` e poderes assim continuar as
 configurações de SSH, wifi, etc...
 
-[Voltar ao Índice](#indice) | [Passo anterior - Descarregar a imagem do sistema operativo.](#download_image) | [Preparar raspberry para ser acedido e configurado por outro computador](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
+[Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
 
 ### <a name="clone_image_to_card-windows"></a>Windows
