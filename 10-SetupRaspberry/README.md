@@ -21,7 +21,8 @@
 ## <a name="introducao"></a>Introdução
 
 ![Raspberry PI 3 B+](/img/RPi3-B-Plus-intro.jpg)
-img: https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
+
+_https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg_
 
 Um raspberry pi é um computador, na sua board tem um processor, RAM, interfaces USB, interface HDMI, (...) mas que usa um cartão de memória (ou PEN USB) como memória secundária, em vez dos discos rigidos que normalmente são usados nos computadores tradicionais.
 
