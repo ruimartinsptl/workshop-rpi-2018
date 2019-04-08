@@ -91,27 +91,14 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 
 [Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
-### <a name="clone_image_to_card-linux"></a>Linux
-
-#### Linha de comandos
-* Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
-* Abre a linha de comandos, executa `lsblk`, verifica que discos `/dev/sdX` existem, insere o cartão de memória e volta a executar `lsblk`, agora vê qual é o novo disco que aparece na lista dos `/dev/sdX`, será onde pretender gravar a imagem.
-* Desmonta todas as partições desse disco.
-* `sudo dd bs=4M if=~/Downloads/2018-06-27-raspbian-stretch.img of=/dev/sdX conv=fsync`
-	* `~/Downloads/2018-06-27-raspbian-stretch.img` é o caminho completo da imagem que descomprimiste, o `if` significa `input file`;
-	* `/dev/sdX` é o caminho para o cartão de memória, deves substituir o `X` pelo numero correspondente. `of` significa `output file`;
-	* **NOTA:** Certifica-te que não estás a escrever para uma unidade USB errada! Se não tens muita prática, remove do PC todos os discos externos, e PENs que não estejas a usar :)
-	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que possas ter instalado no PC
-	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
-
-[Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
-
-### <a name="clone_image_to_card-mac"></a>MacOS X
+### <a name="clone_image_to_card-linux"></a>Linux e MacOS X
 
 #### Linha de comandos
 
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
-* Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
+* Abre a linha de comandos, executa `lsblk`[linux] ou `diskutil list`[mac], verifica que discos `/dev/sdX`[linux] 
+`/dev/diskX` [mac] existem, insere o cartão de memória e volta a executar `lsblk`/`diskutil list`, agora vê
+qual é o novo disco que aparece na lista dos `/dev/sdX`/`/dev/diskX`, será onde pretender gravar a imagem.
 
 ![diskutil list](/img/mac-diskutil.png)
 
