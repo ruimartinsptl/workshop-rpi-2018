@@ -2,7 +2,7 @@
 
 # Workshop - Raspberry Pi: Introdução, Visão por Computador e GPIOs
 
-## <a name="indice"></a>Indice
+## <a name="indice"></a>Índice
 * [Introdução](#introducao)
 * [Pré-Requisitos para o workshop](#prerequisitos)
 * [1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup)](#parte1)
@@ -10,7 +10,7 @@
 * [3ª parte: Configuração de GPIOs](#parte3)
 * [Mini-Projecto](#projecto)
 
-[Voltar ao indice](#indice) | [Passo seguinte - Introdução](#introducao)
+[Voltar ao Índice](#indice) | [Passo seguinte - Introdução](#introducao)
 
 ## <a name="introducao"></a>Introdução
 
@@ -29,7 +29,7 @@ No entanto, por questões de segurança, por omissão, quando um raspberry arran
 
 A solução para este problema está descrita nos proximos passos.
 
-[Voltar ao indice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
+[Voltar ao Índice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
 
 ## <a name="prerequisitos"></a>Pré-Requisitos para o workshop
 Hardware:
@@ -62,26 +62,26 @@ Outros:
 * Bash (Não obrigatório)
 * Python 3 (Não obrigatório)
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 
 ## <a name="parte1"></a>1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 
 ## <a name="parte2"></a>2ª parte: Visão por computador num Raspberry PI com Python e OpenCV
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ## <a name="parte3"></a>3ª parte: Configuração de GPIOs
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 
 ## <a name="projecto"></a>Mini-projecto
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 # Não esquecer de adicionar ao guião:
 

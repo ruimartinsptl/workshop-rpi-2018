@@ -2,7 +2,7 @@
 
 # Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
 
-## <a name="indice"></a>Indice
+## <a name="indice"></a>Índice
 * [Introdução](#introducao)
 * [Pré-Requisitos](#prerequisitos)
 * [Descarregar a imagem do sistema operativo](#download_image)
@@ -16,7 +16,7 @@
 	* [Configurar WiFi](#ligar-wifi)
 	* [VNC](#vnc)
 
-[Voltar ao indice](#indice) | [Passo seguinte - Introdução](#introducao)
+[Voltar ao Índice](#indice) | [Passo seguinte - Introdução](#introducao)
 
 ## <a name="introducao"></a>Introdução
 
@@ -35,7 +35,7 @@ No entanto, por questões de segurança, por omissão, quando um raspberry arran
 
 A solução para este problema está descrita nos proximos passos.
 
-[Voltar ao indice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
+[Voltar ao Índice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
 
 ## <a name="prerequisitos"></a>Pré-Requisitos
 Hardware:
@@ -68,9 +68,9 @@ Outros:
 * Bash (Não obrigatório)
 * Python 3 (Não obrigatório)
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
-[Voltar ao indice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
+[Voltar ao Índice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
 
 ## <a name="download_image"></a> Descarregar a imagem do sistema operativo.
 
@@ -86,7 +86,7 @@ Para descarregar a imagem do Raspbian vai à seguinte ligação: [https://www.ra
 
 No nosso caso, vamos optar pela versão com ambiente gráfico, pois iremos utilizar mais à frente.
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ## <a name="clone_image_to_card"></a>Copiar a imagem para o cartão
 Após se ter feito download da imagem do sistema operativo, este tem que ser escrito num cartão de memóra.
@@ -102,14 +102,14 @@ A forma mais facil de se clonar a imagem para um cartão de memória é atravez 
 
 Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 
 ### <a name="clone_image_to_card-windows"></a>Windows
 
 Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"), no entanto, também é muito utilizado o [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/), que é semelhante ao [Etcher](https://etcher.io/ "Visit Etcher website")
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### <a name="clone_image_to_card-linux"></a>Linux
 
@@ -124,7 +124,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que possas ter instalado no PC
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `(pv -n ~/Downloads/2018-06-27-raspbian-stretch.img | dd of=/dev/sdX bs=4M) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0`
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### <a name="clone_image_to_card-mac"></a>MacOS X
 
@@ -143,7 +143,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 
 		* ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ## <a name="prepare_remote"></a>Preparar raspberry para ser acedido e configurado por outro computador
 Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
@@ -165,7 +165,7 @@ Caso pretendas aceder ao raspberry a partir da rede wifi, tens que configurar o 
 
 Nota: Se pretenderes executar aplicações com ambiente gráfico por SSH, deves executar o comando `ssh` com o parametro `-X`. Iremos demonstrar mais à frente.
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### <a name="ligar-wifi"></a>Ligar WiFi
 
@@ -187,7 +187,7 @@ network={
 
 Agora sim, se ejectares o cartão e o colocares no raspberry, este irá ligar-se automáticamente à rede WiFi.
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### Descobrir IP do raspberry
 Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e não soubermos qual é o IP que lhe vai ser atribuído quando se ligar à rede, podemos usar ferramentas de pesquisa de IPs, como o [AngryIP Scanner](https://angryip.org/download), LanScan Pro, etc...
@@ -196,7 +196,7 @@ Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e n�
 
 ![LanScan Pro](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/LanScanPro.png)
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### Ligar por SSH
 
@@ -222,7 +222,7 @@ Ex: `ssh pi@10.79.72.107`
 
 **Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 ### Transferir ficheiros por SCP
 `scp <user>@<ip>:<path> <path>`
@@ -249,7 +249,7 @@ No teu computador deves instalar o UltraVNC Client a partir deste link: [https:/
 
 No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferramenta de partilhad e ecrã que acompanha o sistema operativo. (TODO: Completar)
 
-[Voltar ao indice](#indice)
+[Voltar ao Índice](#indice)
 
 # Algumas configurações iniciais
 `sudo rpi-update # Updating firmware [Opcional]`
