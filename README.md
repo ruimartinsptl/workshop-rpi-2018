@@ -4,10 +4,10 @@
 
 ## <a name="indice"></a>Indice
 * [Introdução](#introducao)
-* [Pré-Requisitos](#prerequisitos)
-* [Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).](/20-ComputerVision)
-* [Visão por computador num Raspberry PI com Python e OpenCV.](/20-ComputerVision)
-* [Configuração de GPIOs](/30-GPIOs)
+* [Pré-Requisitos para o workshop](#prerequisitos)
+* [1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup)](/20-ComputerVision)
+* [2ª parte: Visão por computador num Raspberry PI com Python e OpenCV](/20-ComputerVision)
+* [3ª parte: Configuração de GPIOs](/30-GPIOs)
 * [Mini-Projecto](/40-Project)
 
 [Voltar ao indice](#indice) | [Passo seguinte - Introdução](#introducao)
@@ -31,7 +31,7 @@ A solução para este problema está descrita nos proximos passos.
 
 [Voltar ao indice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
 
-## <a name="prerequisitos"></a>Pré-Requisitos
+## <a name="prerequisitos"></a>Pré-Requisitos para o workshop
 Hardware:
 
 * Raspberry Pi (1, 2, ou 3)
@@ -63,6 +63,14 @@ Outros:
 * Python 3 (Não obrigatório)
 
 [Voltar ao indice](#indice)
+
+
+## <a name="introducao"></a>Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
+
+[Voltar ao indice](#indice)
+
+
+
 
 # Não esquecer de adicionar ao guião:
 
