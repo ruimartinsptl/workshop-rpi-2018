@@ -20,11 +20,8 @@
 
 ## <a name="introducao"></a>Introdução
 
-![Raspberry PI 3 B+](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/RPi3-B-Plus-intro.jpg)
-https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
-
 ![Raspberry PI 3 B+](/img/RPi3-B-Plus-intro.jpg)
-https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
+img: https://www.waveshare.com/img/devkit/RPi3-B-Plus/RPi3-B-Plus-intro.jpg
 
 Um raspberry pi é um computador, na sua board tem um processor, RAM, interfaces USB, interface HDMI, (...) mas que usa um cartão de memória (ou PEN USB) como memória secundária, em vez dos discos rigidos que normalmente são usados nos computadores tradicionais.
 
@@ -38,42 +35,8 @@ No entanto, por questões de segurança, por omissão, quando um raspberry arran
 
 A solução para este problema está descrita nos proximos passos.
 
-[Voltar ao Índice](#indice) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
 
-## <a name="prerequisitos"></a>Pré-Requisitos
-Hardware:
-
-* Raspberry Pi (1, 2, ou 3)
-* PSU (Alimentador electrico de preferencia com 2A, podem usar a do telemovel)
-* Cartão de memória SD ou micro SD (com 8Gb ou mais)
-* Pen Wifi (caso o Raspberry Pi não tenha wifi integrado)
-
-Software:
-
-* Windows:
-	* Etcher ou Win32DiskImager
-	* Putty
-	* xming
-	* FileZilla
-	* Ultra VNC
-* Linux:
-	* Etcher (Opcional)
-	* FileZilla
-	* Ultra VNC
-* MacOS X:
-	* Etcher (Opcional)
-	* Lan Scan ou software semelhante (Opcional)
-	* FileZilla
-	* Ultra VNC
-
-Outros:
-
-* Bash (Não obrigatório)
-* Python 3 (Não obrigatório)
-
-[Voltar ao Índice](#indice)
-
-[Voltar ao Índice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Pré-Requisitos](#prerequisitos)
+[Voltar ao Índice](#indice) | [Passo anterior - Introdução](#introducao) | [Passo seguinte - Descarregar a imagem do sistema operativo](#download_image)
 
 ## <a name="download_image"></a> Descarregar a imagem do sistema operativo.
 
