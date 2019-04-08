@@ -42,7 +42,7 @@ A solução para este problema está descrita nos proximos passos.
 
 Existem vários sistemas operativos já pré configurados para serem executados no raspberry, na página oficial podemos encontrar várias alternativas:
 
-![Raspberry PI Operative Systems](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/OS-RPi.png)
+![Raspberry PI Operative Systems](/img/OS-RPi.png)
 
 No entanto o Raspbian é dos mais utilizados e documentados, com suporte oficial. É um sistema operativo baseado em [Debian](https://www.debian.org/ "Visit Debian website") (Muito semelhante a [Ubuntu](https://www.ubuntu.com/ "Visit Ubuntu website"), [Kali linux](https://www.kali.org/ "Visit Kali linux website"), ...)
 
