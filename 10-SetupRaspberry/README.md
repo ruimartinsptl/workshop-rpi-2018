@@ -195,9 +195,9 @@ Por linha de comandos executa o seguinte comando:
 Ex: `ssh pi@10.79.72.107`
 
 **Nota 1:** Para evitar que em cada ligação nos seja pedida a password, podemos fazer 
-autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: `ssh-copy-id pi@<ip>`
+autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: `ssh-copy-id <nome de utilizador>@<ip dp raspberry>`
 
-**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
+**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107`
 
 [Voltar ao Índice](#indice)
 
