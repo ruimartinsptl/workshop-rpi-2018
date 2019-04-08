@@ -1,3 +1,4 @@
+    Rui Martins, rui@martins.pt [Setembro de 2018]
 
 # conda install notebook ipykernel
 conda install nb_conda # https://stackoverflow.com/questions/37085665/in-which-conda-environment-is-jupyter-executing
