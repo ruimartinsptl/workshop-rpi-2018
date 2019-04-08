@@ -202,11 +202,19 @@ autenticação com chaves publicas/privadas. Para tal basta executarmos o seguin
 [Voltar ao Índice](#indice)
 
 ### Transferir ficheiros por SCP
-`scp <user>@<ip>:<path> <path>`
 
-`scp <path> <user>@<ip>:<path>`
+É possivel copiar ficheiros entre o nosso computador e o raspberry por SSH
+
+`scp <user>@<ip>:<path> <path>` - Copiar do raspberry para o computador
+
+`scp <path> <user>@<ip>:<path>` - Copiar do computador para o raspberry
+
+`scp <user>@<ip>:<path> <user>@<ip>:<path>` - Copiar de um raspberry para outro raspberry
+
+**Nota:** Podemos copiar pastas adicionando o comando `-r` ao `scp`
 
 ### Transferir ficheiros por SFTP
+
 Instalar o [Filezilla](https://filezilla-project.org), e criar uma nova ligação SFTP.
 
 ![](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Filezilla-1.png)
