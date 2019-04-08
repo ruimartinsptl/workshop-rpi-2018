@@ -8,7 +8,11 @@
 
 ## Visão por computador num Raspberry PI com Python e OpenCV.
 
+[Ir para 20-ComputerVision](/20-ComputerVision)
+
 ## Configuração de GPIOs
+
+[Ir para 30-GPIOs](/30-GPIOs)
 
 ## Mini-Projecto
 

@@ -1,6 +1,17 @@
 
-# Created by https://www.gitignore.io/api/linux,macos,python,windows,pycharm
-# Edit at https://www.gitignore.io/?templates=linux,macos,python,windows,pycharm
+# Created by https://www.gitignore.io/api/linux,macos,python,windows,pycharm,jupyternotebooks
+# Edit at https://www.gitignore.io/?templates=linux,macos,python,windows,pycharm,jupyternotebooks
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+#
 
 ### Linux ###
 *~
@@ -203,7 +214,6 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
 
 # IPython
 profile_default/
@@ -277,5 +287,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/linux,macos,python,windows,pycharm
-
+# End of https://www.gitignore.io/api/linux,macos,python,windows,pycharm,jupyternotebooks
