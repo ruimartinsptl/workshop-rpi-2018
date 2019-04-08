@@ -5,10 +5,10 @@
 ## <a name="indice"></a>Indice
 * [Introdução](#introducao)
 * [Pré-Requisitos para o workshop](#prerequisitos)
-* [1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup)](/20-ComputerVision)
-* [2ª parte: Visão por computador num Raspberry PI com Python e OpenCV](/20-ComputerVision)
-* [3ª parte: Configuração de GPIOs](/30-GPIOs)
-* [Mini-Projecto](/40-Project)
+* [1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup)](#parte1)
+* [2ª parte: Visão por computador num Raspberry PI com Python e OpenCV](#parte2)
+* [3ª parte: Configuração de GPIOs](#parte3)
+* [Mini-Projecto](#projecto)
 
 [Voltar ao indice](#indice) | [Passo seguinte - Introdução](#introducao)
 
@@ -65,12 +65,23 @@ Outros:
 [Voltar ao indice](#indice)
 
 
-## <a name="introducao"></a>Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
+## <a name="parte1"></a>1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
 
 [Voltar ao indice](#indice)
 
 
+## <a name="parte2"></a>2ª parte: Visão por computador num Raspberry PI com Python e OpenCV
 
+[Voltar ao indice](#indice)
+
+## <a name="parte3"></a>3ª parte: Configuração de GPIOs
+
+[Voltar ao indice](#indice)
+
+
+## <a name="projecto"></a>Mini-projecto
+
+[Voltar ao indice](#indice)
 
 # Não esquecer de adicionar ao guião:
 
