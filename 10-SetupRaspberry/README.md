@@ -78,9 +78,11 @@ A forma mais facil de se clonar a imagem para um cartão de memória é atravez 
 
 ![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
 
-Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão e voltar a colocar, para que seja montada a partição de `/boot` e poderes assim continuar as configurações de SSH, etc...
+Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão
+e voltar a colocar no computador, para que seja montada a partição de `/boot` e poderes assim continuar as
+configurações de SSH, wifi, etc...
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](#indice) | [Passo anterior - Descarregar a imagem do sistema operativo.](#download_image) | [Preparar raspberry para ser acedido e configurado por outro computador](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
 
 ### <a name="clone_image_to_card-windows"></a>Windows
