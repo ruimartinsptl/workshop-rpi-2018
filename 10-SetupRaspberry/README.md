@@ -76,7 +76,7 @@ Vou aqui apresentar várias alternativas para resolver este passo, algumas delas
 #### Etcher [solução muito fácil]
 A forma mais facil de se clonar a imagem para um cartão de memória é atravez do [Etcher](https://etcher.io/ "Visit Etcher website").
 
-![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Etcher.png)
+![diskutil list](/img/Etcher.png)
 
 Após a imagem ter sido copiada para o cartão, o cartão é desmontado automáticamente, deverás remover o cartão
 e voltar a colocar no computador, para que seja montada a partição de `/boot` e poderes assim continuar as
@@ -113,7 +113,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 * Descomprime o ficheiro `2018-06-27-raspbian-stretch.img` dentro do `2018-06-27-raspbian-stretch.zip`.
 * Abre a linha de comandos, executa `diskutil list`, verifica que discos `/dev/diskX` existem, insere o cartão de memória e volta a executar `diskutil list`, agora vê qual é o novo disco que aparece na lista dos `/dev/diskX`.
 
-![diskutil list](/img/mac-diskutil.png)
+![diskutil list](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/mac-diskutil.png)
 
 * Desmonta todas as partições desse disco, exemplo: `sudo umount /dev/disk2s1`, `sudo umount /dev/disk2s2`
 * `sudo dd bs=4M if=~/Downloads/2018-06-27-raspbian-stretch.img of=/dev/sdX conv=fsync`
@@ -123,7 +123,7 @@ Recomendo a utilização do [Etcher](https://etcher.io/ "Visit Etcher website"),
 	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que eventualmente tenhas instalado no PC
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `sudo sh -c '(pv -n ~/Downloads/RaspberryPI-Images/2018-06-27-raspbian-stretch.img | dd of=/dev/disk2 bs=1m) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0'`
 
-![dd](/img/dd-with-dialog.png)
+![dd](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/dd-with-dialog.png)
 
 [Voltar ao Índice](#indice) | [Passo anterior - Descarregar imagem](#download_image) | [Preparar SSH, wifi, ...](#preparar-raspberry-para-ser-acedido-e-configurado-por-outro-computador)
 
