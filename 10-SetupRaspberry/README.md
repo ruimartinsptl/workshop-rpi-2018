@@ -107,7 +107,7 @@ qual é o novo disco que aparece na lista dos `/dev/sdX`/`/dev/diskX`, será ond
 	* `~/Downloads/2018-06-27-raspbian-stretch.img` é o caminho completo da imagem que descomprimiste, o `if` significa `input file`;
 	* `/dev/sdX` é o caminho para o cartão de memória, deves substituir o `X` pelo numero correspondente. `of` significa `output file`;
 	* **NOTA:** Certifica-te que não estás a escrever para uma unidade USB errada! Se não tens muita prática, remove do PC todos os discos externos, e PENs que não estejas a usar :)
-	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em MAIUSCULA ou minuscula, em função de softwares que eventualmente tenhas instalado no PC
+	* Se o `Block Size` estiver a dar erro, tenta `1M` em vez de `4M`. No caso do MacOS X, o `M` pode ter que ser em **MAIUSCULA** ou **minuscula**, em função de softwares que eventualmente tenhas instalado no PC
 	* Se quiseres ser mais nerd, e ver o progresso, podes executar o seguinte comando: `sudo sh -c '(pv -n ~/Downloads/RaspberryPI-Images/2018-06-27-raspbian-stretch.img | dd of=/dev/disk2 bs=1m) 2>&1 | dialog --gauge "A clonar imagem para o cartão, Aguarde pf..." 10 70 0'`
 
 ![dd](/img/dd-with-dialog.png)
@@ -116,7 +116,7 @@ qual é o novo disco que aparece na lista dos `/dev/sdX`/`/dev/diskX`, será ond
 
 ## <a name="prepare_remote"></a>Preparar raspberry para ser acedido e configurado por outro computador
 Neste momento o cartão de memória estaria pronto para ir para o raspberry, caso tivesses monitor e teclado.
-Como não é o caso, vamos agora preparar o sistema operativo para que permita ligações externas e para que se ligue ao WiFi
+Como não é o caso, vamos agora preparar o sistema operativo para que permita ligações externas e para que se ligue ao WiFi automáticamente.
 
 ### Preparar raspberry para servir SSH
 
@@ -148,8 +148,8 @@ Dentro do ficheiro, deves colocar o seguinte conteúdo:
 country=PT
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
-    ssid="workshop8"
-    psk="password"
+    ssid="nome_da_rede"
+    psk="password_do_wifi"
     key_mgmt=WPA-PSK
 }
 ```
@@ -159,19 +159,25 @@ Agora sim, se ejectares o cartão e o colocares no raspberry, este irá ligar-se
 [Voltar ao Índice](#indice)
 
 ### Descobrir IP do raspberry
-Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, e não soubermos qual é o IP que lhe vai ser atribuído quando se ligar à rede, podemos usar ferramentas de pesquisa de IPs, como o [AngryIP Scanner](https://angryip.org/download), LanScan Pro, etc...
+Se o raspberry não estiver configurado com IP estático, mas sim com DHCP, 
+e não soubermos qual é o IP que lhe vai ser atribuído quando se ligar à rede, 
+podemos usar ferramentas de pesquisa de IPs, como o 
+[AngryIP Scanner](https://angryip.org/download), 
+[LanScan](https://itunes.apple.com/pt/app/lanscan/id472226235?l=en&mt=12), 
+etc...
 
-![Angry-IP-Scanner](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Angry-IP-Scanner.png)
+![Angry-IP-Scanner](/img/Angry-IP-Scanner.png)
 
-![LanScan Pro](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/LanScanPro.png)
+![LanScan](/img/LanScanPro.png)
 
 [Voltar ao Índice](#indice)
 
 ### Ligar por SSH
 
 #### Windows
-No windows podes usar o [Putty](https://www.putty.org/)
-**TODO: Colocar imagem**
+No windows podes usar o [Putty](https://www.putty.org/), faz download aqui: [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+**TO DO: Colocar imagem do putty aqui**
 
 **Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, no entanto precisamos de instalar um XServer, e activar a opção de `X11 forewarding` no putty:
 
@@ -188,8 +194,10 @@ Por linha de comandos executa o seguinte comando:
 
 Ex: `ssh pi@10.79.72.107`
 
+**Nota 1:** Para evitar que em cada ligação nos seja pedida a password, podemos fazer 
+autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: `ssh-copy-id pi@<ip>`
 
-**Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
+**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh
 
 [Voltar ao Índice](#indice)
 
