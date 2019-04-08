@@ -16,7 +16,7 @@ faceCascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
 
-GPIO.setup(03, GPIO.OUT)
+GPIO.setup(3, GPIO.OUT)
 pwm=GPIO.PWM(03, 50)
 pwm.start(0)
 
