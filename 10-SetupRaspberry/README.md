@@ -240,14 +240,20 @@ vnc://<ip-do-raspberry>
 [Voltar ao Índice](#indice)
 
 # Algumas configurações iniciais
-`sudo rpi-update # Updating firmware [Opcional]`
 
-`sudo reboot # (Se tiver sido executado o rpi-update)`
+`sudo rpi-update` # Updating firmware [Opcional]
+
+`sudo reboot` # (Se tiver sido executado o rpi-update)
 
 ```
-# ldconfig is a program that is used to maintain the shared library cache.
-# This cache is typically stored in the file /etc/ld.so.cache and is used by
-# the system to map a shared library name to the location of the corresponding
+sudo apt-get -y update 
+sudo apt-get -y dist-upgrade # Actualização do sistema
+```
+
+ldconfig is a program that is used to maintain the shared library cache.
+This cache is typically stored in the file /etc/ld.so.cache and is used by
+the system to map a shared library name to the location of the corresponding
+```
 sudo ldconfig
 ```
 
