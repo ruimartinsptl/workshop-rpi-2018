@@ -195,9 +195,10 @@ Por linha de comandos executa o seguinte comando:
 Ex: `ssh pi@10.79.72.107`
 
 **Nota 1:** Para evitar que em cada ligação nos seja pedida a password, podemos fazer 
-autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: `ssh-copy-id <nome de utilizador>@<ip dp raspberry>`
+autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: 
+`ssh-copy-id <nome de utilizador>@<ip dp raspberry>`
 
-**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107`
+**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107` (experimenta depois escrever `chromium-browser` no terminal para abrires o google chrome no raspberry, mas com interface gráfica no teu computador)
 
 [Voltar ao Índice](#indice)
 
@@ -217,9 +218,9 @@ autenticação com chaves publicas/privadas. Para tal basta executarmos o seguin
 
 Instalar o [Filezilla](https://filezilla-project.org), e criar uma nova ligação SFTP.
 
-![](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Filezilla-1.png)
+![](/img/Filezilla-1.png)
 
-![](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/Filezilla-2.png)
+![](/img/Filezilla-2.png)
 
 ### Ligar VNC
 Se te for mais conveniente, podes utilizar o protocolo VNC para interagir com o raspberry, para isso, tens que primeiro activar o protocolo de VNC.
@@ -232,7 +233,9 @@ No teu computador deves instalar o UltraVNC Client a partir deste link: [https:/
 
 ![Chromium a correr no Raspberry](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/UltraVNC-2.png)
 
-No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferramenta de partilhad e ecrã que acompanha o sistema operativo. (TODO: Completar)
+No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferramenta de partilha de ecrã que acompanha
+o sistema operativo, para tal basta abrires o "Finder" e premir as teclas `⌘+k` de seguida inserir o seguinte endereço: 
+vnc://<ip-do-raspberry>
 
 [Voltar ao Índice](#indice)
 

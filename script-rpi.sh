@@ -3,10 +3,10 @@ echo 'alias ll="ls -la"' >> .bash_rc
 source .bash_rc
 
 # Updating firmware
-sudo rpi-update
-# sudo reboot
+sudo rpi-update -y
+sudo reboot
 
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y dist-upgrade
 
 # ldconfig is a program that is used to maintain the shared library cache. 
@@ -17,12 +17,13 @@ sudo ldconfig
 sudo reboot
 
 sudo raspi-config
-sudo apt-get update
+
+sudo apt-get -y update
 sudo apt-get -y upgrade
 
 
-sudo apt-get purge wolfram-engine
-sudo apt-get purge libreoffice*
+sudo apt-get purge -y wolfram-engine
+sudo apt-get purge -y libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
 
@@ -39,20 +40,20 @@ sudo apt-get install -y libatlas-base-dev gfortran
 sudo apt-get install -y python2.7-dev
 sudo apt-get install -y python3-dev
 
-
-
-wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.1.zip
-wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.1.zip
-unzip opencv.zip
-unzip opencv_contrib.zip
-
-
 wget -O get-pip.py https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
 
 
 sudo pip3 install numpy scipy
+
+wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.1.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.1.zip
+unzip opencv.zip
+unzip opencv_contrib.zip
+
+rm opencv.zip
+rm opencv_contrib.zip
 
 cd ~/opencv-3.4.1/
 mkdir build

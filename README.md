@@ -27,7 +27,7 @@ GPIOs do raspberry.
 Hardware:
 
 * Raspberry Pi (1, 2, ou 3)
-* PSU (Alimentador electrico de preferencia com 2A, podem usar o do telemóvel)
+* PSU (Alimentador electrico de preferencia com 2A, podem usar o do telemóvel, ou um grande power bank :P)
 * Cartão de memória SD ou micro SD (com 8Gb ou mais)
 * Pen Wifi (caso o Raspberry Pi não tenha wifi integrado)
 * Web-Cam [opcional]
