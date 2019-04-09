@@ -267,6 +267,7 @@ sudo ldconfig
 O raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
 
 `sudo raspi-config nonint do_wifi_country PT`
+
 `sudo raspi-config nonint do_hostname rpi-demo`
 
 Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
@@ -311,8 +312,6 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 
 # Não esquecer de adicionar ao guião:
-
-SSH com Chave Publica || ssh-copy-id pi@123.213.123.123
 
 SSH Greating
 
