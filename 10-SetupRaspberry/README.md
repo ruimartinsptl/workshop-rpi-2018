@@ -247,22 +247,21 @@ vnc://<ip-do-raspberry>
 
 ```
 sudo apt-get -y update 
+sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade # Actualização do sistema
 ```
 
 ldconfig is a program that is used to maintain the shared library cache.
 This cache is typically stored in the file /etc/ld.so.cache and is used by
 the system to map a shared library name to the location of the corresponding
-```
-sudo ldconfig
-```
+`sudo ldconfig`
 
 `sudo raspi-config`
 
 ![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
 
-* Expand File Sistem
 * Update
+* Expand File Sistem
 * Locale
 * Boot Options -> DESKTOP
 * Video Memory
@@ -285,9 +284,9 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 `sudo apt-get install -y eog` # Visualizar imagens
 
-`sudo apt-get install screen` # Deixar aplicações em execução quando se fecha a ligação SSH
+`sudo apt-get install -y screen` # Deixar aplicações em execução quando se fecha a ligação SSH
 
-`sudo apt-get install htop` #
+`sudo apt-get install -y htop` #
 
 # Remover programas que não fazem falta:
 `sudo apt-get purge wolfram-engine`
@@ -297,6 +296,11 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 `sudo apt-get clean`
 
 `sudo apt-get autoremove`
+
+
+
+
+
 
 
 

@@ -1,12 +1,14 @@
+#!/usr/bin/env bash
 
 echo 'alias ll="ls -la"' >> .bash_rc
 source .bash_rc
 
 # Updating firmware
-sudo rpi-update -y
+sudo rpi-update
 sudo reboot
 
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
 # ldconfig is a program that is used to maintain the shared library cache. 
@@ -18,15 +20,44 @@ sudo reboot
 
 sudo raspi-config
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get -y update && sudo apt-get -y upgrade
 
+
+sudo apt-get install -y vim
+sudo apt-get install -y eog
+sudo apt-get install -y screen
+sudo apt-get install -y htop
 
 sudo apt-get purge -y wolfram-engine
 sudo apt-get purge -y libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
 
+
+
+# Instalar por repositorio
+sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
+
+sudo apt-get install -y libcblas-dev
+sudo apt-get install -y libhdf5-dev
+sudo apt-get install -y libhdf5-serial-dev
+sudo apt-get install -y libatlas-base-dev
+sudo apt-get install -y libjasper-dev
+sudo apt-get install -y libqtgui4
+sudo apt-get install -y libqt4-test
+
+sudo apt-get install -y libjasper1
+sudo apt-get install -y libhdf5-100
+# sudo apt-get --yes --force-yes install libatlas-base-dev
+
+# sudo pip3 install opencv-python
+sudo pip3 install opencv-contrib-python
+
+
+
+exit()
+
+# Instalar a partir do código fonte
 
 sudo apt-get install -y build-essential cmake pkg-config
 sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
