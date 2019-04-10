@@ -53,9 +53,18 @@ sudo apt-get install -y libhdf5-100
 # sudo pip3 install opencv-python
 sudo pip3 install opencv-contrib-python
 
-
+python -c "import cv2; print cv2.__version__"
+python3 -c "import cv2; print(cv2.__version__)"
 
 exit()
+
+
+
+
+
+
+
+
 
 # Instalar a partir do código fonte
 

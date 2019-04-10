@@ -304,13 +304,39 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 
 
+
+
+
+
+
+
 # Instalar OpenCV
 
 ## OpenCV 2.x
-`sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy`
+```
+sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
+```
 
 ## OpenCV 3.x
-`TODO: Documentr aqui`
+```
+sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
+
+sudo apt-get install -y libcblas-dev
+sudo apt-get install -y libhdf5-dev
+sudo apt-get install -y libhdf5-serial-dev
+sudo apt-get install -y libatlas-base-dev
+sudo apt-get install -y libjasper-dev
+sudo apt-get install -y libqtgui4
+sudo apt-get install -y libqt4-test
+
+sudo apt-get install -y libjasper1
+sudo apt-get install -y libhdf5-100
+
+sudo pip3 install opencv-contrib-python # OpenCV 3
+
+python -c "import cv2; print cv2.__version__"
+python3 -c "import cv2; print(cv2.__version__)"
+```
 
 # Processar imagens
 ## O que é uma imagem
