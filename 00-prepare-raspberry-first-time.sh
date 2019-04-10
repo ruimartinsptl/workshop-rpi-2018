@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
+set -e
+
+echo '' >> .bash_rc
 echo 'alias ll="ls -la"' >> .bash_rc
+echo '' >> .bash_rc
 source .bash_rc
 
 # Updating firmware
-sudo rpi-update
+sudo rpi-update # Press 'Y'
 # sudo reboot
 
 sudo apt-get -y update
@@ -56,11 +60,11 @@ sudo pip3 install opencv-contrib-python
 python -c "import cv2; print cv2.__version__"
 python3 -c "import cv2; print(cv2.__version__)"
 
-read -p "Press enter to continue"
+read -p "Press enter to continue... The system will reboot."
 
 sudo reboot
 
-exit()
+exit
 
 
 
