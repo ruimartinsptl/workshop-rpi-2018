@@ -5,7 +5,7 @@ source .bash_rc
 
 # Updating firmware
 sudo rpi-update
-sudo reboot
+# sudo reboot
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -16,7 +16,7 @@ sudo apt-get -y dist-upgrade
 # the system to map a shared library name to the location of the corresponding 
 # shared library file
 sudo ldconfig
-sudo reboot
+# sudo reboot
 
 sudo raspi-config
 
@@ -55,6 +55,10 @@ sudo pip3 install opencv-contrib-python
 
 python -c "import cv2; print cv2.__version__"
 python3 -c "import cv2; print(cv2.__version__)"
+
+read -p "Press enter to continue"
+
+sudo reboot
 
 exit()
 
