@@ -300,4 +300,6 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 # ----
 ## cronjob
+## screen
+## eog (via ssh -X)
 
