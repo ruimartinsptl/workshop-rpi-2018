@@ -87,8 +87,6 @@ Outros:
 
 # Não esquecer de adicionar ao guião:
 
-SSH com Chave Publica || ssh-copy-id pi@123.213.123.123
-
 SSH Greating
 
 

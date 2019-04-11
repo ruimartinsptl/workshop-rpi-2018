@@ -174,6 +174,8 @@ etc...
 
 ### Ligar por SSH
 
+**Nota:** Por omissão o nome de utilizador e password do raspbian são `pi` e `raspberry`.
+
 #### Windows
 No windows podes usar o [Putty](https://www.putty.org/), faz download aqui: [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
@@ -196,7 +198,7 @@ Ex: `ssh pi@10.79.72.107`
 
 **Nota 1:** Para evitar que em cada ligação nos seja pedida a password, podemos fazer 
 autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: 
-`ssh-copy-id <nome de utilizador>@<ip dp raspberry>`
+`ssh-copy-id <nome de utilizador>@<ip dp raspberry>`.
 
 **Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107` (experimenta depois escrever `chromium-browser` no terminal para abrires o google chrome no raspberry, mas com interface gráfica no teu computador)
 
@@ -240,6 +242,10 @@ vnc://<ip-do-raspberry>
 [Voltar ao Índice](#indice)
 
 # Algumas configurações iniciais
+
+Para termos o raspberry preparado para o nosso workshop vamos fazer algumas configurações iniciais e instalar algum 
+software...
+Aqui estão descritos os diferentes passos, mas os mesmos estão no ficheiro `00-prepare-raspberry-first-time.sh`  
 
 `sudo rpi-update` # Updating firmware [Opcional]
 
