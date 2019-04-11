@@ -298,31 +298,6 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 `sudo apt-get autoremove`
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Não esquecer de adicionar ao guião:
-
-SSH Greating
-
-
-
-PIL
-
-OpenCV
-
-PWM
-
-
+# ----
+## cronjob
 
