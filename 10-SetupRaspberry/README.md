@@ -258,7 +258,9 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 ```
 
-`sudo ldconfig` ldconfig is a program that is used to maintain the shared library cache.
+`sudo ldconfig` 
+
+ldconfig is a program that is used to maintain the shared library cache.
 This cache is typically stored in the file /etc/ld.so.cache and is used by
 the system to map a shared library name to the location of the corresponding
 
