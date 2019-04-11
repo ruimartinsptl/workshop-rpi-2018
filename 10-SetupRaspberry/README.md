@@ -309,9 +309,9 @@ Mais informações:
 `sudo apt-get install -y htop` # Ver processos em execução, memoria em uso, etc...
 
 ## Remover programas que não fazem falta:
-`sudo apt-get purge wolfram-engine`
+`sudo apt-get purge -y wolfram-engine`
 
-`sudo apt-get purge libreoffice* `
+`sudo apt-get purge -y libreoffice*`
 
 `sudo apt-get clean`
 
