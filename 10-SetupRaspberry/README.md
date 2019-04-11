@@ -313,9 +313,9 @@ Mais informações:
 
 `sudo apt-get purge -y libreoffice*`
 
-`sudo apt-get clean`
+`sudo apt-get clean -y`
 
-`sudo apt-get autoremove`
+`sudo apt-get autoremove -y`
 
 
 # ----
@@ -323,28 +323,30 @@ Mais informações:
 ## screen
 ## eog (via ssh -X)
 
+# Fim da parte 1
+
 ## <a name="parte1"></a>1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
 
 [Clica para abrires a parte 1](../10-SetupRaspberry)
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](../#indice)
 
 
 ## <a name="parte2"></a>2ª parte: Visão por computador num Raspberry PI com Python e OpenCV
 
 [Clica para abrires a parte 2](../20-ComputerVision)
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](../#indice)
 
 ## <a name="parte3"></a>3ª parte: Configuração de GPIOs
 
 [Clica para abrires a parte 3](../30-GPIOs)
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](../#indice)
 
 
 ## <a name="projecto"></a>Mini-projecto
 
 [Clica para abrires a mini projecto](../40-Project)
 
-[Voltar ao Índice](#indice)
+[Voltar ao Índice](../#indice)

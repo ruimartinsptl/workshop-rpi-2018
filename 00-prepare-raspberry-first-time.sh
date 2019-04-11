@@ -42,12 +42,12 @@ sudo apt-get install -y htop
 
 sudo apt-get purge -y wolfram-engine
 sudo apt-get purge -y libreoffice*
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt-get clean -y
+sudo apt-get autoremove -y
 
 
 
-# Instalar por repositorio
+# Instalar OpenCV por repositorio
 sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
 
 sudo apt-get install -y libcblas-dev

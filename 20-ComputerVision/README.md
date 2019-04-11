@@ -2,13 +2,13 @@
 
 # Instalar OpenCV
 
-## OpenCV 2.x
+## Python 2.x
 ```
 sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
-python -c "import cv2; print cv2.__version__"
+python -c "import cv2; print 'OpenCV version: '+cv2.__version__" # Python 2 OpenCV 2
 ```
 
-## OpenCV 3.x
+## Python 3.x
 ```
 sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
 
@@ -25,8 +25,9 @@ sudo apt-get install -y libhdf5-100
 
 sudo pip3 install opencv-contrib-python # OpenCV 3
 
-python -c "import cv2; print cv2.__version__"
-python3 -c "import cv2; print(cv2.__version__)"
+# Testar se o OpenCV é carregado correctamente:
+python -c "import cv2; print 'OpenCV version: '+cv2.__version__" # Python 2 OpenCV 2
+python3 -c "import cv2; print('OpenCV version: '+cv2.__version__)" # Python 3 OpenCV 3
 ```
 
 # Processar imagens
@@ -80,3 +81,31 @@ source deactivate
 conda env list
 ```
 
+
+# Fim da parte 2
+
+## <a name="parte1"></a>1ª parte: Configurar Raspberry PI com WiFi, sem usar monitor e teclado (headless setup).
+
+[Clica para abrires a parte 1](../10-SetupRaspberry)
+
+[Voltar ao Índice](../#indice)
+
+
+## <a name="parte2"></a>2ª parte: Visão por computador num Raspberry PI com Python e OpenCV
+
+[Clica para abrires a parte 2](../20-ComputerVision)
+
+[Voltar ao Índice](../#indice)
+
+## <a name="parte3"></a>3ª parte: Configuração de GPIOs
+
+[Clica para abrires a parte 3](../30-GPIOs)
+
+[Voltar ao Índice](../#indice)
+
+
+## <a name="projecto"></a>Mini-projecto
+
+[Clica para abrires a mini projecto](../40-Project)
+
+[Voltar ao Índice](../#indice)
