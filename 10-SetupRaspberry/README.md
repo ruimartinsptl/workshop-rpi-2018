@@ -279,7 +279,7 @@ the system to map a shared library name to the location of the corresponding
 **NOTA:**
 Se preferires, o raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
 
-`sudo raspi-config nonint do_expand_rootfs`
+`# sudo raspi-config nonint do_expand_rootfs`
 
 `sudo raspi-config nonint do_wifi_country PT`
 
@@ -287,7 +287,7 @@ Se preferires, o raspi-config pode ser configurado apenas por linha de comandos,
 
 `# sudo raspi-config nonint do_boot_behaviour B1 # SET BOOT CLI`
 
-`sudo raspi-config nonint do_boot_behaviour B3 # SET BOOT GUI`
+`# sudo raspi-config nonint do_boot_behaviour B3 # SET BOOT GUI`
 
 `sudo raspi-config nonint do_vnc 1`
 
