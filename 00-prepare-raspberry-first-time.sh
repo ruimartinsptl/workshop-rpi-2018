@@ -22,7 +22,15 @@ sudo apt-get -y dist-upgrade
 sudo ldconfig
 # sudo reboot
 
-sudo raspi-config
+# sudo raspi-config
+sudo apt-get -y install raspi-config # Update raspi-config
+sleep 5
+sudo raspi-config nonint do_expand_rootfs
+sudo raspi-config nonint do_wifi_country PT
+sudo raspi-config nonint do_hostname rpi-demo
+sudo raspi-config nonint do_boot_behaviour B3
+sudo raspi-config nonint do_vnc 1
+sudo raspi-config nonint do_rgpio 1
 
 sudo apt-get -y update && sudo apt-get -y upgrade
 

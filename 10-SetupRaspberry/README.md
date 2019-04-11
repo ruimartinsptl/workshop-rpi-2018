@@ -258,7 +258,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 ```
 
-`sudo ldconfig` 
+`sudo ldconfig`
 
 ldconfig is a program that is used to maintain the shared library cache.
 This cache is typically stored in the file /etc/ld.so.cache and is used by
@@ -279,11 +279,23 @@ the system to map a shared library name to the location of the corresponding
 **NOTA:**
 Se preferires, o raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
 
+`sudo raspi-config nonint do_expand_rootfs`
+
 `sudo raspi-config nonint do_wifi_country PT`
 
 `sudo raspi-config nonint do_hostname rpi-demo`
 
-Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
+`# sudo raspi-config nonint do_boot_behaviour B1 # SET BOOT CLI`
+
+`sudo raspi-config nonint do_boot_behaviour B3 # SET BOOT GUI`
+
+`sudo raspi-config nonint do_vnc 1`
+
+`sudo raspi-config nonint do_rgpio 1`
+
+Mais informações: 
+- [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
+- [https://github.com/raspberrypi-ui/rc_gui/blob/master/src/rc_gui.c#L23-L70](https://github.com/raspberrypi-ui/rc_gui/blob/master/src/rc_gui.c#L23-L70)
 
 
 ## Outros:
