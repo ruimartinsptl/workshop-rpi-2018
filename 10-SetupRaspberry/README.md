@@ -246,19 +246,19 @@ vnc://<ip-do-raspberry>
 `sudo reboot` # (Se tiver sido executado o rpi-update)
 
 ```
+# Actualização do sistema
 sudo apt-get -y update 
 sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade # Actualização do sistema
+sudo apt-get -y dist-upgrade
 ```
 
-ldconfig is a program that is used to maintain the shared library cache.
+`sudo ldconfig` ldconfig is a program that is used to maintain the shared library cache.
 This cache is typically stored in the file /etc/ld.so.cache and is used by
 the system to map a shared library name to the location of the corresponding
-`sudo ldconfig`
 
 `sudo raspi-config`
 
-![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/raspi-config.png)
+![raspi-config](/img/raspi-config.png)
 
 * Update
 * Expand File Sistem
@@ -269,7 +269,7 @@ the system to map a shared library name to the location of the corresponding
 * ...
 
 **NOTA:**
-O raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
+Se preferires, o raspi-config pode ser configurado apenas por linha de comandos, sem precisar de interação humana. Seguem aqui alguns exemplos de como o fazer:
 
 `sudo raspi-config nonint do_wifi_country PT`
 
@@ -278,7 +278,7 @@ O raspi-config pode ser configurado apenas por linha de comandos, sem precisar d
 Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
 
 
-# Outros:
+## Outros:
 
 `sudo apt-get install -y vim` # Editor
 
@@ -286,9 +286,9 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 `sudo apt-get install -y screen` # Deixar aplicações em execução quando se fecha a ligação SSH
 
-`sudo apt-get install -y htop` #
+`sudo apt-get install -y htop` # Ver processos em execução, memoria em uso, etc...
 
-# Remover programas que não fazem falta:
+## Remover programas que não fazem falta:
 `sudo apt-get purge wolfram-engine`
 
 `sudo apt-get purge libreoffice* `
@@ -308,41 +308,6 @@ Mais informações: [https://github.com/RPi-Distro/raspi-config/blob/master/rasp
 
 
 
-
-
-# Instalar OpenCV
-
-## OpenCV 2.x
-```
-sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
-```
-
-## OpenCV 3.x
-```
-sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
-
-sudo apt-get install -y libcblas-dev
-sudo apt-get install -y libhdf5-dev
-sudo apt-get install -y libhdf5-serial-dev
-sudo apt-get install -y libatlas-base-dev
-sudo apt-get install -y libjasper-dev
-sudo apt-get install -y libqtgui4
-sudo apt-get install -y libqt4-test
-
-sudo apt-get install -y libjasper1
-sudo apt-get install -y libhdf5-100
-
-sudo pip3 install opencv-contrib-python # OpenCV 3
-
-python -c "import cv2; print cv2.__version__"
-python3 -c "import cv2; print(cv2.__version__)"
-```
-
-# Processar imagens
-## O que é uma imagem
-![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/MatBasicImageForComputer.jpg)
-
-![raspi-config](https://github.com/ruimartinsptl/workshop-rpi-2018/raw/master/img/RGB-matrix.png)
 
 
 

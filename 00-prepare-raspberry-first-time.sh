@@ -54,7 +54,7 @@ sudo apt-get install -y libjasper1
 sudo apt-get install -y libhdf5-100
 # sudo apt-get --yes --force-yes install libatlas-base-dev
 
-# sudo pip3 install opencv-python
+sudo pip3 install opencv-python  # if you install 'opencv-contrib-python', you don't need to install 'opencv-python'
 sudo pip3 install opencv-contrib-python
 
 python -c "import cv2; print cv2.__version__"
