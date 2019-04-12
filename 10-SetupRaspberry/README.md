@@ -289,9 +289,17 @@ Se preferires, o raspi-config pode ser configurado apenas por linha de comandos,
 
 `# sudo raspi-config nonint do_boot_behaviour B3 # SET BOOT GUI`
 
-`sudo raspi-config nonint do_vnc 1`
+`sudo raspi-config nonint get_vnc`
 
-`sudo raspi-config nonint do_rgpio 1`
+`sudo raspi-config nonint do_vnc 0`
+
+`raspi-config nonint get_rgpio`
+
+`sudo raspi-config nonint do_rgpio 0`
+
+`raspi-config nonint get_camera`
+
+`raspi-config nonint do_camera 0`
 
 Mais informações: 
 - [https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config](https://github.com/RPi-Distro/raspi-config/blob/master/raspi-config)
@@ -307,6 +315,8 @@ Mais informações:
 `sudo apt-get install -y screen` # Deixar aplicações em execução quando se fecha a ligação SSH
 
 `sudo apt-get install -y htop` # Ver processos em execução, memoria em uso, etc...
+
+`sudo apt-get install -y geany` # Editor de texto / código
 
 ## Remover programas que não fazem falta:
 `sudo apt-get purge -y wolfram-engine`

@@ -1,5 +1,15 @@
     Rui Martins, rui@martins.pt [Setembro de 2018]
 
+# Instalar Jupyter (Opcional)
+
+`pip install jupyter # python 2`
+
+`pip3 install jupyter # python 3`
+
+`jupyter notebook`
+
+`jupyter notebook --ip 0.0.0.0 --port 8888 # Servir para toda a rede`
+
 # Instalar OpenCV
 
 ## Python 2.x
@@ -29,6 +39,14 @@ sudo pip3 install opencv-contrib-python # OpenCV 3
 python -c "import cv2; print 'OpenCV version: '+cv2.__version__" # Python 2 OpenCV 2
 python3 -c "import cv2; print('OpenCV version: '+cv2.__version__)" # Python 3 OpenCV 3
 ```
+
+`sudo pip3 install imutils`
+
+# Raspicam
+
+`raspistill -o output.jpg`
+
+`eog output.jpg` [Se estivermos numa sessão SSH, é preciso ter iniciado a sessão com o parametro `-X` ou seja `ssh -X pi@<ip>`]
 
 # Processar imagens
 ## O que é uma imagem

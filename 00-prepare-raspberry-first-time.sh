@@ -29,8 +29,14 @@ sleep 5
 sudo raspi-config nonint do_wifi_country PT
 sudo raspi-config nonint do_hostname rpi-demo
 # sudo raspi-config nonint do_boot_behaviour B3
-sudo raspi-config nonint do_vnc 1
-sudo raspi-config nonint do_rgpio 1
+sudo raspi-config nonint get_vnc
+sudo raspi-config nonint do_vnc 0
+sudo raspi-config nonint get_rgpio
+sudo raspi-config nonint do_rgpio 0
+sudo raspi-config nonint get_camera
+sudo raspi-config nonint do_camera 0
+
+
 
 sudo apt-get -y update && sudo apt-get -y upgrade
 
@@ -39,6 +45,7 @@ sudo apt-get install -y vim
 sudo apt-get install -y eog
 sudo apt-get install -y screen
 sudo apt-get install -y htop
+sudo apt-get install -y geany
 
 sudo apt-get purge -y wolfram-engine
 sudo apt-get purge -y libreoffice*
@@ -62,8 +69,18 @@ sudo apt-get install -y libjasper1
 sudo apt-get install -y libhdf5-100
 # sudo apt-get --yes --force-yes install libatlas-base-dev
 
+sudo apt-get install -y python3-matplotlib
+sudo apt-get install -y python3-scipy
+sudo pip3 install --upgrade pip
+
+sudo pip3 install jupyter # [optional]
+
 sudo pip3 install opencv-python  # if you install 'opencv-contrib-python', you don't need to install 'opencv-python'
 sudo pip3 install opencv-contrib-python
+
+sudo pip3 install imutils
+
+sudo apt-get clean -y
 
 python -c "import cv2; print cv2.__version__"
 python3 -c "import cv2; print(cv2.__version__)"
