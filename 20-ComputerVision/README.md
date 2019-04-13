@@ -10,6 +10,8 @@
 
 `jupyter notebook --ip 0.0.0.0 --port 8888 # Servir para toda a rede`
 
+`sudo update-alternatives --config x-www-browser # Escolher qual o browser por omissão [OPCIONAL]`
+
 # Instalar OpenCV
 
 ## Python 2.x
