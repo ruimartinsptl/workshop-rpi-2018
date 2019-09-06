@@ -4,7 +4,6 @@
 
 ## <a name="indice"></a>Índice
 * [Introdução](#introducao)
-* [Pré-Requisitos](#prerequisitos)
 * [Descarregar a imagem do sistema operativo](#download_image)
 * [Copiar a imagem para o cartão](#clone_image_to_card)
 	* [Windows, Linux ou Mac](#clone_image_to_card-windows-linux-mac)
@@ -144,9 +143,11 @@ Para que o teu raspberry se ligue automáticamente à rede wifi, é preciso tamb
 
 Dentro do ficheiro, deves colocar o seguinte conteúdo:
 
+(Testado no raspberry pi 1, 2, 3 e 4)
 ```
 country=PT
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
 network={
     ssid="nome_da_rede"
     psk="password_do_wifi"
@@ -179,11 +180,13 @@ etc...
 #### Windows
 No windows podes usar o [Putty](https://www.putty.org/), faz download aqui: [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-**TO DO: Colocar imagem do putty aqui**
+![putty](https://www.digitalocean.com/docs/images/droplets/putty/connect-config.4975aa1eead2990cb1a558981f5d7bbad22706a010a5651478c3b98a00001f87.png)
 
-**Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, no entanto precisamos de instalar um XServer, e activar a opção de `X11 forewarding` no putty:
+**Nota:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, no entanto precisamos de instalar um XServer (como o xming), e activar a opção de `X11 forewarding` no putty:
 
-https://sourceforge.net/projects/xming/
+xming: [https://sourceforge.net/projects/xming/](https://sourceforge.net/projects/xming/)
+
+!(X11 forewarding)[https://i.stack.imgur.com/B7r4t.png]
 
 Exemplo de uma aplicação que está instalada no raspberry, mas a janela está a ser mostrada no windows:
 
@@ -200,11 +203,13 @@ Ex: `ssh pi@10.79.72.107`
 autenticação com chaves publicas/privadas. Para tal basta executarmos o seguinte comando: 
 `ssh-copy-id <nome de utilizador>@<ip dp raspberry>`.
 
-**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107` (experimenta depois escrever `chromium-browser` no terminal para abrires o google chrome no raspberry, mas com interface gráfica no teu computador)
+**Nota 2:** Podemos redireccionar as janelas do ambiente gráfico para o nosso computador, adicionar `-X` ao comando ssh. Ex: `ssh -X pi@10.79.72.107` (experimenta depois executa por exemplo `chromium-browser` no terminal para abrires o google chrome no raspberry, mas com interface gráfica no teu computador). No caso dos Mac OS, também precisam de um Xserver, como o [XQuartz](https://www.xquartz.org/)
 
 [Voltar ao Índice](#indice)
 
 ### Transferir ficheiros por SCP
+
+#### Windows, Linux e MacOS
 
 É possivel copiar ficheiros entre o nosso computador e o raspberry por SSH
 
@@ -238,6 +243,10 @@ No teu computador deves instalar o UltraVNC Client a partir deste link: [https:/
 No MacOS não precisas de instalar o UltraVNC, podes usar directamente a ferramenta de partilha de ecrã que acompanha
 o sistema operativo, para tal basta abrires o "Finder" e premir as teclas `⌘+k` de seguida inserir o seguinte endereço: 
 vnc://<ip-do-raspberry>
+
+Se não ligares nenhum monitor ao raspberry, e no Ultra VNC vires a mensagem "Cannot currently show the dekstop", deverás definir manualmente uma resolução diferente de "default"
+
+![](/img/change-resolution.png)
 
 [Voltar ao Índice](#indice)
 
@@ -310,7 +319,7 @@ Mais informações:
 
 `sudo apt-get install -y vim` # Editor
 
-`sudo apt-get install -y eog` # Visualizar imagens
+`sudo apt-get install -y eog eog-plugins` # Visualizar imagens
 
 `sudo apt-get install -y screen` # Deixar aplicações em execução quando se fecha a ligação SSH
 
@@ -330,8 +339,67 @@ Mais informações:
 
 # ----
 ## cronjob
+
+Para executares automáticamente scripts em função do tempo, podes utilizar cronjobs,
+para tal basta executares `crontab -l` para veres os teus trabalhos agendados, e `crontab -e` para os editares.
+
+Podes ver/editar os cronjobs de outros utilizadores no sistema, execurando `crontab -u username -l` e `crontab -u username -e`.
+
+
+Os cronjobs que adicionares tem que estar neste formato:
+```text
+* * * * * command to be executed
+- - - - -
+| | | | |
+| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+| | | ------- Month (1 - 12)
+| | --------- Day of month (1 - 31)
+| ----------- Hour (0 - 23)
+------------- Minute (0 - 59)
+```
+
+**Exemplos:**
+
+`0 2 * * * /bin/sh backup.sh` Executa todos os dias às 02h00.
+
+`0 5,17 * * * /scripts/script.sh` Executa todos os dias às 05h00 e às 17h00
+
+`* * * * *  /scripts/script.sh` Executa todos os minutos
+
+`* * * jan,may,aug *  /script/script.sh` Executa todos os minutos durante Janeiro, Maio e Agosto
+
+Ver mais exemplos aqui: [https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/](https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/)
+
+
 ## screen
+
+Quando tens uma sessão SSH, ao terminares a ligação, todos os processos que lá foram iniciados são terminados. 
+Imagina que queres abrir uma sessão SSH, deixar a executar um script, fechar a sessão, e dali a umas horas voltares à sessão em que o script ainda está a correr. Tens que utilizar o screen.
+
+Iniciar sessão screen (depois de abrires a ligação SSH)
+`screen`
+
+Depois de iniciares a sessão, podes ver todos os parametros do screen carregando em `CTL+A` e depois em `?`
+
+Podes fazer _detach_ da sessão, carregando em `CTL+A` e depois em `d`, a sessão ficará na mesma activa.
+
+Para voltares à ultima sessão, podes executar `screen -r`
+
+Caso tenhas várias sessões activas, para as veres podes executar `screen -ls`
+```text
+$ screen -ls
+There is a screen on:
+	25144.pts-1.rpi-demo	(09/05/19 00:46:07)	(Detached)
+1 Socket in /run/screen/S-pi.
+```
+
+Poderás voltar a uma sessão especifica, executando: `screen -r 25144`
+
+**NOTA:** Além do screen, o [tmux](https://github.com/tmux/tmux/wiki) também é muito utilizado.
+
 ## eog (via ssh -X)
+
+Para visualizares uma imagem a partir de uma sessão SSH, podes por exemplo utilizar o eog, executando `eog imagem.jog`
 
 # Fim da parte 1
 

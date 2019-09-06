@@ -8,12 +8,23 @@ echo '' >> .bash_rc
 source .bash_rc
 
 # Updating firmware
-sudo rpi-update # Press 'Y'
+#############################################################
+#WARNING: 'rpi-update' updates to pre-releases of the linux
+#kernel tree and Videocore firmware.
+#
+#'rpi-update' should only be used if there is a specific
+#reason to do so - for example, a request by a Raspberry Pi
+#engineer.
+#
+#DO NOT use 'rpi-update' as part of a regular update process.
+#
+##############################################################
+# sudo rpi-update # Press 'Y'
 # sudo reboot
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+# sudo apt-get -y dist-upgrade
 
 # ldconfig is a program that is used to maintain the shared library cache. 
 # This cache is typically stored in the file /etc/ld.so.cache and is used by 
@@ -42,7 +53,7 @@ sudo apt-get -y update && sudo apt-get -y upgrade
 
 
 sudo apt-get install -y vim
-sudo apt-get install -y eog
+sudo apt-get install -y eog eog-plugins # plugins são opcionais
 sudo apt-get install -y screen
 sudo apt-get install -y htop
 sudo apt-get install -y geany
@@ -56,8 +67,22 @@ sudo apt-get autoremove -y
 
 # Instalar OpenCV por repositorio
 sudo apt-get install -y libopencv-dev python-dev python-opencv python-numpy
+python -c "import cv2; print 'OpenCV version: '+cv2.__version__" # Python 2 OpenCV 3
+# 3.2.0
 
-sudo apt-get install -y libcblas-dev
+apt list python*opencv*
+sudo apt install python3-opencv
+python3 -c "import cv2; print(cv2.__version__)" # Python 3 OpenCV 3
+# 3.2.0
+
+
+
+
+
+
+
+
+#sudo apt-get install -y libcblas-dev # obsoleted
 sudo apt-get install -y libhdf5-dev
 sudo apt-get install -y libhdf5-serial-dev
 sudo apt-get install -y libatlas-base-dev
@@ -66,19 +91,28 @@ sudo apt-get install -y libqtgui4
 sudo apt-get install -y libqt4-test
 
 sudo apt-get install -y libjasper1
-sudo apt-get install -y libhdf5-100
+#sudo apt-get install -y libhdf5-100 # obsoleted
+sudo apt-get install -y libhdf5-103
 # sudo apt-get --yes --force-yes install libatlas-base-dev
+
+
+
+
+
+
+
+
 
 sudo apt-get install -y python3-matplotlib
 sudo apt-get install -y python3-scipy
 sudo pip3 install --upgrade pip
 
+sudo pip3 install imutils
+
 sudo pip3 install jupyter # [optional]
 
-sudo pip3 install opencv-python  # if you install 'opencv-contrib-python', you don't need to install 'opencv-python'
-sudo pip3 install opencv-contrib-python
-
-sudo pip3 install imutils
+# sudo pip3 install opencv-python  # if you install 'opencv-contrib-python', you don't need to install 'opencv-python'
+# sudo pip3 install opencv-contrib-python
 
 sudo apt-get clean -y
 

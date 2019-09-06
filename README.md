@@ -26,7 +26,7 @@ GPIOs do raspberry.
 ## <a name="prerequisitos"></a>Pré-Requisitos para o workshop
 Hardware:
 
-* Raspberry Pi (1, 2, ou 3)
+* Raspberry Pi (0, 1, 2, 3, ou 4)
 * PSU (Alimentador electrico de preferencia com 2A, podem usar o do telemóvel, ou um grande power bank :P)
 * Cartão de memória SD ou micro SD (com 8Gb ou mais)
 * Pen Wifi (caso o Raspberry Pi não tenha wifi integrado)
@@ -36,25 +36,28 @@ Hardware:
 Software:
 
 * Windows:
-	* Etcher ou Win32DiskImager
-	* Putty
-	* xming
-	* FileZilla
-	* Ultra VNC
+	* [Etcher](https://www.balena.io/etcher/) ou [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
+	* [Angry IP scanner](https://angryip.org/download/)
+	* [Putty](https://www.putty.org/)
+	* [xming](https://sourceforge.net/projects/xming/)
+	* [FileZilla](https://filezilla-project.org/)
+	* [Ultra VNC](https://www.uvnc.com/downloads/ultravnc.html)
 * Linux:
-	* Etcher (Opcional)
-	* FileZilla
-	* Ultra VNC
+	* [Etcher](https://www.balena.io/etcher/) (Opcional)
+	* [Angry IP scanner](https://angryip.org/download/)
+	* [XQuartz](https://www.xquartz.org/)
+	* [FileZilla](https://filezilla-project.org/)
+	* [Ultra VNC](https://www.uvnc.com/downloads/ultravnc.html)
 * MacOS X:
-	* Etcher (Opcional)
-	* Lan Scan ou software semelhante (Opcional)
-	* FileZilla
-	* Ultra VNC
+	* [Etcher](https://www.balena.io/etcher/) (Opcional)
+	* [Angry IP scanner](https://angryip.org/download/) ou [Lan Scan](https://apps.apple.com/us/app/lanscan/id472226235?mt=12)
+	* [FileZilla](https://filezilla-project.org/)
+	* [Ultra VNC](https://www.uvnc.com/downloads/ultravnc.html)
 
 Outros:
 
-* Bash Linux (Não obrigatório)
-* Python 3 (Não obrigatório)
+* [Python 3](https://www.python.org/downloads/)
+* [PyCharm](https://www.jetbrains.com/pycharm/) (Opcional)
 
 [Voltar ao Índice](#indice)
 
