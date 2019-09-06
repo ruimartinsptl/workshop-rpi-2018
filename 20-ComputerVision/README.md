@@ -177,7 +177,7 @@ Executa um dos seguintes comandos:
 
 * `jupyter notebook` (Para servires o notebook localmente)
 
-* `jupyter notebook --ip 0.0.0.0 --port 8888` (Para servires o notebook para toda a rede)
+* **`jupyter notebook --ip 0.0.0.0 --port 8888` (Para servires o notebook para toda a rede)**
 
 Como pretendemos executar o jupyter no raspberry, e aceder a partir do portatil, deves escolher a segunda opção.
 
